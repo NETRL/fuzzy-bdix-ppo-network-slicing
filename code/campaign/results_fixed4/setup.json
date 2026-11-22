@@ -1,0 +1,140 @@
+{
+ "configuration": {
+  "split": "train",
+  "start_index": 1661,
+  "horizon": 2000,
+  "traffic_scale": 1.0,
+  "sla_scale": 1.0,
+  "budget_prbs": 100,
+  "fault_windows": [],
+  "reward_kind": "fuzzy",
+  "isolation_enabled": true,
+  "control_interval_s": 0.01,
+  "tick_s": 0.001,
+  "packet_bits": 8000,
+  "prb_bandwidth_hz": 360000,
+  "spectral_efficiency_bits_per_s_hz": 3.0,
+  "prb_rate_mbps": 1.08,
+  "delta_prb": 5,
+  "n_min": 2,
+  "residual_share": 0.3,
+  "utilisation_guards": [
+   0.8,
+   0.35,
+   0.8
+  ],
+  "priority_weights": [
+   0.3,
+   0.5,
+   0.2
+  ],
+  "committed_rate_mbps": [
+   198.54450000000003,
+   75.33488148999999,
+   0.2578049999999999
+  ],
+  "constraint_cost": "Unique deadline-eligible misses becoming due in this control interval divided by unique eligible packets becoming due, zero when none. Mean across three slices.",
+  "reliability": "Lossless service; achieved reliability is timely-delivered fraction of deadline-eligible packets. Workbook Reliability is target only.",
+  "fault_semantics": "Recorded fault flag is a plan input. Explicit fault_windows separately reduce available PRBs; this is an ideal service fault, not detection validation."
+ },
+ "preprocessing": {
+  "input": "data/slicing_dataset_pre_rl.xlsx",
+  "input_sha256": "d62d4b92b944ae3bb8b617f658c5b5e30395cb2b43a7719145097a1db64fdbcb",
+  "rows": 45000,
+  "slice_order": [
+   "eMBB",
+   "uRLLC",
+   "mMTC"
+  ],
+  "train_rows_per_slice": 12000,
+  "test_rows_per_slice": 3000,
+  "split": "Original row order within each slice; first 12,000 for training and last 3,000 held out.",
+  "workload_timing": "10 ms demand-holding intervals and 1 ms service ticks; original workbook has no timestamps and its Control_Interval field is not replayed as physical time.",
+  "numeric_imputation": "Per-slice training median only; finite positive requested rates/deadlines required.",
+  "columns_used": [
+   "Requested_DL (Mbps)",
+   "Requested_Latency (ms)",
+   "Reliability (%)",
+   "Fault_Condition",
+   "Isolation_Level",
+   "Network_Load (%)"
+  ],
+  "not_used_as_measured_outcomes": [
+   "Achieved_DL (Mbps)",
+   "Achieved_Latency (ms)",
+   "SLA_Met",
+   "Reward"
+  ],
+  "medians": {
+   "eMBB": {
+    "Requested_DL (Mbps)": 220.60500000000002,
+    "Requested_Latency (ms)": 29.87,
+    "Reliability (%)": 99.5001
+   },
+   "uRLLC": {
+    "Requested_DL (Mbps)": 33.291404395,
+    "Requested_Latency (ms)": 2.233165128,
+    "Reliability (%)": 99.99945
+   },
+   "mMTC": {
+    "Requested_DL (Mbps)": 0.0493,
+    "Requested_Latency (ms)": 118.8505,
+    "Reliability (%)": 97.2615
+   }
+  },
+  "missing_counts": {
+   "eMBB": {
+    "Requested_DL (Mbps)": 164,
+    "Requested_Latency (ms)": 0,
+    "Reliability (%)": 0
+   },
+   "uRLLC": {
+    "Requested_DL (Mbps)": 0,
+    "Requested_Latency (ms)": 0,
+    "Reliability (%)": 0
+   },
+   "mMTC": {
+    "Requested_DL (Mbps)": 78,
+    "Requested_Latency (ms)": 0,
+    "Reliability (%)": 0
+   }
+  },
+  "committed_rate_mbps": {
+   "eMBB": 198.54450000000003,
+   "uRLLC": 75.33488148999999,
+   "mMTC": 0.2578049999999999
+  },
+  "committed_rate_rule": "eMBB: 0.9 x median requested DL (the SLA proxy floor); uRLLC and mMTC: 95th percentile of the requested DL; the remainder of a request is best effort and is not offered to the slice queue."
+ },
+ "horizon": 2000,
+ "rollout": 2048,
+ "eval_starts": [
+  12000,
+  12052,
+  12105,
+  12157,
+  12210,
+  12263,
+  12315,
+  12368,
+  12421,
+  12473,
+  12526,
+  12578,
+  12631,
+  12684,
+  12736,
+  12789,
+  12842,
+  12894,
+  12947,
+  13000
+ ],
+ "steps_distributed": 200000,
+ "steps_centralized": 200000,
+ "seeds": [
+  0,
+  1,
+  2
+ ]
+}

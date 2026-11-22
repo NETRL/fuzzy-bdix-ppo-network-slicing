@@ -1,0 +1,26 @@
+\begin{table}[!t]
+\centering
+\caption{Comparison of the proposed controller with the learning baselines under the stated replay protocol (best displayed values per slice in bold).}
+\label{tab:sota_comparison}
+\footnotesize
+\begin{tabular}{llcccc}
+\toprule
+\textbf{Slice} & \textbf{Method} & \textbf{Lat. (ms)} & \textbf{SLA viol. (\%)} & \textbf{Tput (Mbit/s)} & \textbf{Isol.} \\
+\midrule
+eMBB & DQN~\cite{mnih2015dqn} (value-based, single agent, joint action) & 2.13 & 0.98 & \textbf{151.85} & \textbf{0.99} \\
+eMBB & MAPPO~\cite{yu2022mappo} (shared actor, central critic, per-slice reward) & 1.53 & 0.07 & \textbf{151.85} & 0.95 \\
+eMBB & PPO-Lagrangian~\cite{ray2019safe,stooke2020pid} (single agent) & 2.42 & 0.24 & \textbf{151.85} & 0.96 \\
+eMBB & Distributed Fuzzy-BDIx-PPO & \textbf{1.13} & \textbf{0.00} & \textbf{151.85} & 0.98 \\
+\midrule
+uRLLC & DQN~\cite{mnih2015dqn} (value-based, single agent, joint action) & 1.71 & 11.27 & \textbf{33.76} & \textbf{0.98} \\
+uRLLC & MAPPO~\cite{yu2022mappo} (shared actor, central critic, per-slice reward) & 1.08 & 2.32 & \textbf{33.76} & 0.90 \\
+uRLLC & PPO-Lagrangian~\cite{ray2019safe,stooke2020pid} (single agent) & 1.03 & 0.84 & \textbf{33.76} & 0.89 \\
+uRLLC & Distributed Fuzzy-BDIx-PPO & \textbf{1.01} & \textbf{0.26} & \textbf{33.76} & 0.97 \\
+\midrule
+mMTC & DQN~\cite{mnih2015dqn} (value-based, single agent, joint action) & 3.73 & \textbf{0.00} & \textbf{0.07} & 0.94 \\
+mMTC & MAPPO~\cite{yu2022mappo} (shared actor, central critic, per-slice reward) & \textbf{3.43} & \textbf{0.00} & \textbf{0.07} & 0.92 \\
+mMTC & PPO-Lagrangian~\cite{ray2019safe,stooke2020pid} (single agent) & 3.62 & \textbf{0.00} & \textbf{0.07} & 0.74 \\
+mMTC & Distributed Fuzzy-BDIx-PPO & 4.00 & \textbf{0.00} & \textbf{0.07} & \textbf{1.00} \\
+\bottomrule
+\end{tabular}
+\end{table}

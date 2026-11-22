@@ -1,0 +1,18 @@
+\begin{table}[!t]
+\centering
+\caption{KPI comparison of the centralized (C-PPO) and distributed (D-PPO) Fuzzy-BDIx-PPO controllers (mean over 20 trace-replay windows and three training seeds; the control-message rate is network-wide).}
+\label{tab:kpi_comparison}
+\footnotesize
+\begin{tabular}{llccccc}
+\toprule
+\textbf{Slice} & \textbf{Method} & \textbf{Lat. (ms)} & \textbf{SLA viol. (\%)} & \textbf{Tput (Mbit/s)} & \textbf{Isol.} & \textbf{Ctrl (s$^{-1}$)} \\
+\midrule
+eMBB & C-PPO & 2.04 & 0.07 & 151.84 & 0.99 & 431.0 \\
+eMBB & D-PPO & 1.13 & 0.00 & 151.85 & 0.98 & 506.3 \\
+uRLLC & C-PPO & 1.00 & 0.12 & 33.76 & 0.97 & 431.0 \\
+uRLLC & D-PPO & 1.01 & 0.26 & 33.76 & 0.97 & 506.3 \\
+mMTC & C-PPO & 3.57 & 0.00 & 0.07 & 0.90 & 431.0 \\
+mMTC & D-PPO & 4.00 & 0.00 & 0.07 & 1.00 & 506.3 \\
+\bottomrule
+\end{tabular}
+\end{table}

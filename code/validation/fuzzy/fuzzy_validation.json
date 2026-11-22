@@ -1,0 +1,300 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "complete_unique_rule_antecedents",
+      "count": 162,
+      "status": "PASS"
+    },
+    {
+      "check": "all_162_linguistic_centers",
+      "status": "PASS"
+    },
+    {
+      "check": "complete_domain_grid",
+      "points_per_fault_state": 14641,
+      "total_points": 29282,
+      "minimum_activation_denominator": 1.0,
+      "maximum_activation_denominator": 1.0,
+      "minimum_no_fault_score": 23.0,
+      "maximum_no_fault_score": 100.0,
+      "status": "PASS"
+    },
+    {
+      "check": "six_original_representative_rules",
+      "rules": [
+        {
+          "inputs": [
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            false
+          ],
+          "expected_plan": "IMMEDIATE",
+          "observed_plan": "IMMEDIATE",
+          "score": 100.0
+        },
+        {
+          "inputs": [
+            0.5,
+            0.0,
+            1.0,
+            0.5,
+            false
+          ],
+          "expected_plan": "IMMEDIATE",
+          "observed_plan": "IMMEDIATE",
+          "score": 78.0
+        },
+        {
+          "inputs": [
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            false
+          ],
+          "expected_plan": "OPTIMIZE",
+          "observed_plan": "OPTIMIZE",
+          "score": 73.0
+        },
+        {
+          "inputs": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            false
+          ],
+          "expected_plan": "OPTIMIZE",
+          "observed_plan": "OPTIMIZE",
+          "score": 63.0
+        },
+        {
+          "inputs": [
+            1.0,
+            0.5,
+            0.5,
+            0.0,
+            false
+          ],
+          "expected_plan": "DEFER",
+          "observed_plan": "DEFER",
+          "score": 38.0
+        },
+        {
+          "inputs": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            true
+          ],
+          "expected_plan": "REJECT",
+          "observed_plan": "REJECT",
+          "score": 0.0
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "check": "closed_score_boundaries_and_fault_override",
+      "cases": 16,
+      "status": "PASS"
+    },
+    {
+      "check": "membership_saturation_partition_and_continuity",
+      "status": "PASS"
+    },
+    {
+      "check": "bounded_reward_grid_and_weight_normalization",
+      "results": [
+        {
+          "slice": "eMBB",
+          "reward": "fuzzy_reward",
+          "grid_points": 625,
+          "minimum": 0.0,
+          "maximum": 0.985
+        },
+        {
+          "slice": "eMBB",
+          "reward": "crisp_reward",
+          "grid_points": 625,
+          "minimum": 0.0,
+          "maximum": 0.9999999999999999
+        },
+        {
+          "slice": "uRLLC",
+          "reward": "fuzzy_reward",
+          "grid_points": 625,
+          "minimum": 0.0,
+          "maximum": 0.9925
+        },
+        {
+          "slice": "uRLLC",
+          "reward": "crisp_reward",
+          "grid_points": 625,
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        {
+          "slice": "mMTC",
+          "reward": "fuzzy_reward",
+          "grid_points": 625,
+          "minimum": 0.0,
+          "maximum": 0.985
+        },
+        {
+          "slice": "mMTC",
+          "reward": "crisp_reward",
+          "grid_points": 625,
+          "minimum": 0.0,
+          "maximum": 0.9999999999999999
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "check": "nonzero_isolation_reward_contribution",
+      "results": [
+        {
+          "slice": "eMBB",
+          "full_isolation_low": 0.8399999999999999,
+          "full_isolation_high": 0.9399999999999998,
+          "difference": 0.09999999999999998,
+          "no_isolation_difference": 0.0
+        },
+        {
+          "slice": "uRLLC",
+          "full_isolation_low": 0.81,
+          "full_isolation_high": 0.91,
+          "difference": 0.09999999999999998,
+          "no_isolation_difference": 0.0
+        },
+        {
+          "slice": "mMTC",
+          "full_isolation_low": 0.855,
+          "full_isolation_high": 0.955,
+          "difference": 0.09999999999999998,
+          "no_isolation_difference": 0.0
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "check": "component_plan_masks_and_seeded_reference_override",
+      "cases": [
+        {
+          "plan": "IMMEDIATE",
+          "proposed": 0,
+          "executed": 0,
+          "replaced": false
+        },
+        {
+          "plan": "IMMEDIATE",
+          "proposed": 1,
+          "executed": 1,
+          "replaced": false
+        },
+        {
+          "plan": "IMMEDIATE",
+          "proposed": 2,
+          "executed": 2,
+          "replaced": false
+        },
+        {
+          "plan": "IMMEDIATE",
+          "proposed": 3,
+          "executed": 3,
+          "replaced": false
+        },
+        {
+          "plan": "OPTIMIZE",
+          "proposed": 0,
+          "executed": 0,
+          "replaced": false
+        },
+        {
+          "plan": "OPTIMIZE",
+          "proposed": 1,
+          "executed": 1,
+          "replaced": false
+        },
+        {
+          "plan": "OPTIMIZE",
+          "proposed": 2,
+          "executed": 2,
+          "replaced": false
+        },
+        {
+          "plan": "OPTIMIZE",
+          "proposed": 3,
+          "executed": 3,
+          "replaced": false
+        },
+        {
+          "plan": "DEFER",
+          "proposed": 0,
+          "executed": 0,
+          "replaced": false
+        },
+        {
+          "plan": "DEFER",
+          "proposed": 1,
+          "executed": 1,
+          "replaced": false
+        },
+        {
+          "plan": "DEFER",
+          "proposed": 2,
+          "executed": 2,
+          "replaced": false
+        },
+        {
+          "plan": "DEFER",
+          "proposed": 3,
+          "executed": 3,
+          "replaced": false
+        },
+        {
+          "plan": "REJECT",
+          "proposed": 0,
+          "executed": 0,
+          "replaced": false
+        },
+        {
+          "plan": "REJECT",
+          "proposed": 1,
+          "executed": 0,
+          "replaced": true
+        },
+        {
+          "plan": "REJECT",
+          "proposed": 2,
+          "executed": 2,
+          "replaced": false
+        },
+        {
+          "plan": "REJECT",
+          "proposed": 3,
+          "executed": 0,
+          "replaced": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "check": "numpy_broadcast_and_all_648_center_action_pairs",
+      "status": "PASS"
+    },
+    {
+      "check": "invalid_inputs_rejected",
+      "cases": 16,
+      "status": "PASS"
+    }
+  ],
+  "implementation_sha256": "75f82d38dfd47f2fe1ab31c94936145c22dba2077e28b77b2cad1fb275b7a401",
+  "validation_sha256": "8c8e57aad4deb6cbc596df8f0ad16baf4b7ca746aaefb37a6183e20061e10a87",
+  "scope": "Complete rule coverage, finite bounded inference, reward isolation contribution and reference action-mask semantics. Controller-specific performance and the isolation ablation are measured separately by the training campaign."
+}

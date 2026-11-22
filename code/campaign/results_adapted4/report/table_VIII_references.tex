@@ -1,0 +1,23 @@
+\begin{table}[!t]
+\centering
+\caption{Non-learning reference controllers and the clairvoyant demand-proportional allocation (the fluid optimisation bound is 0 misses for every slice).}
+\label{tab:references}
+\footnotesize
+\begin{tabular}{llcccc}
+\toprule
+\textbf{Slice} & \textbf{Method} & \textbf{Lat. (ms)} & \textbf{SLA viol. (\%)} & \textbf{Tput (Mbit/s)} & \textbf{Isol.} \\
+\midrule
+eMBB & Static Equal-Share & 2708.78 & 99.67 & 110.15 & 1.00 \\
+eMBB & Rule-Based Threshold & 1.10 & 0.00 & 151.86 & 0.99 \\
+eMBB & Clairvoyant demand-proportional allocation (reference) & 4.74 & 2.52 & 151.84 & 1.00 \\
+\midrule
+uRLLC & Static Equal-Share & 1.00 & 0.00 & 33.76 & 1.00 \\
+uRLLC & Rule-Based Threshold & 2.29 & 27.56 & 33.76 & 1.00 \\
+uRLLC & Clairvoyant demand-proportional allocation (reference) & 1.00 & 0.00 & 33.76 & 1.00 \\
+\midrule
+mMTC & Static Equal-Share & 1.00 & 0.00 & 0.07 & 1.00 \\
+mMTC & Rule-Based Threshold & 4.00 & 0.00 & 0.07 & 1.00 \\
+mMTC & Clairvoyant demand-proportional allocation (reference) & 4.00 & 0.00 & 0.07 & 1.00 \\
+\bottomrule
+\end{tabular}
+\end{table}

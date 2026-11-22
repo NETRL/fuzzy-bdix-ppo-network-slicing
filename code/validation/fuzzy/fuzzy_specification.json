@@ -1,0 +1,101 @@
+{
+  "status": "Fuzzy request-plan and achieved-service reward specification",
+  "rule_count": 162,
+  "continuous_terms": {
+    "centers": [
+      0.0,
+      0.5,
+      1.0
+    ],
+    "names": [
+      "Low",
+      "Medium",
+      "High"
+    ],
+    "domain": [
+      0.0,
+      1.0
+    ],
+    "out_of_range": "finite values saturate"
+  },
+  "inference": "Product firing weights; zero-order Sugeno weighted average",
+  "no_fault_consequent": "clip(63 - 30*load - 10*latency_requirement + 20*reliability_requirement + 20*isolation,0,100)",
+  "fault_consequent": 0,
+  "score_categories": {
+    "REJECT": "0 <= q <= 30",
+    "DEFER": "30 < q <= 50",
+    "OPTIMIZE": "50 < q <= 76",
+    "IMMEDIATE": "76 < q <= 100"
+  },
+  "reference_helper_action_masks": {
+    "IMMEDIATE": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "OPTIMIZE": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "DEFER": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "REJECT": [
+      0,
+      2
+    ]
+  },
+  "packet_replay_actions": "DEFER executes IDLE. REJECT overrides SCALE_UP and REALLOCATE with IDLE. IMMEDIATE doubles the SCALE_UP increment. OPTIMIZE applies the normal command.",
+  "action_names": [
+    "IDLE",
+    "SCALE_UP",
+    "SCALE_DOWN",
+    "REALLOCATE"
+  ],
+  "reward_component_order": [
+    "latency",
+    "reliability",
+    "load",
+    "isolation"
+  ],
+  "reward_weights": {
+    "eMBB": [
+      0.36,
+      0.36,
+      0.18,
+      0.1
+    ],
+    "uRLLC": [
+      0.54,
+      0.27,
+      0.09,
+      0.1
+    ],
+    "mMTC": [
+      0.27,
+      0.45,
+      0.18,
+      0.1
+    ]
+  },
+  "fuzzy_reward_components": [
+    "clip((1.3 - latency_ratio)/0.6,0,1)",
+    "clip((reliability_ratio - 0.99)/0.01,0,1)",
+    "clip(min((load_ratio - 0.05)/0.25,1,(2.0 - load_ratio)/1.2),0,1)",
+    "clip((isolation - 0.70)/0.25,0,1)"
+  ],
+  "crisp_reward_components": [
+    "latency_ratio <= 1",
+    "reliability_ratio >= 1",
+    "load_ratio <= 1",
+    "isolation >= 1"
+  ],
+  "isolation_ablation": "Remove isolation term then renormalize the three remaining weights; the original relative weights are recovered.",
+  "physical_feasibility": "Plan masks encode request semantics. The common environment allocator independently enforces the integer resource budget."
+}

@@ -1,0 +1,32 @@
+\begin{table}[!t]
+\centering
+\caption{Ablation of the proposed framework: the full distributed design against its centralized counterpart and the variants without the fuzzy reward shaping, without the plan gate, without the isolation term and with a floored Euclidean projection in place of the guarded arbiter.}
+\label{tab:incremental}
+\footnotesize
+\begin{tabular}{llcccc}
+\toprule
+\textbf{Slice} & \textbf{Method} & \textbf{Lat. (ms)} & \textbf{SLA viol. (\%)} & \textbf{Tput (Mbit/s)} & \textbf{Isol.} \\
+\midrule
+eMBB & Centralized instead of distributed (global state, joint action) (variant) & 2.04 & 0.07 & 151.84 & \textbf{0.99} \\
+eMBB & Without fuzzy reward shaping (crisp SLA reward) (variant) & \textbf{1.04} & \textbf{0.00} & 151.86 & 0.97 \\
+eMBB & Without the BDIx plan gate (variant) & \textbf{1.04} & \textbf{0.00} & \textbf{170.77} & 0.96 \\
+eMBB & Without the isolation term (variant) & 1.38 & \textbf{0.00} & 151.85 & 0.95 \\
+eMBB & Floored Euclidean projection instead of the guarded arbiter (variant) & 1.08 & \textbf{0.00} & 151.86 & 0.95 \\
+eMBB & Distributed Fuzzy-BDIx-PPO & 1.13 & \textbf{0.00} & 151.85 & 0.98 \\
+\midrule
+uRLLC & Centralized instead of distributed (global state, joint action) (variant) & \textbf{1.00} & 0.12 & 33.76 & \textbf{0.97} \\
+uRLLC & Without fuzzy reward shaping (crisp SLA reward) (variant) & 1.04 & 1.36 & 33.76 & 0.93 \\
+uRLLC & Without the BDIx plan gate (variant) & 1.07 & 2.11 & \textbf{36.47} & 0.94 \\
+uRLLC & Without the isolation term (variant) & 1.09 & 2.19 & 33.76 & 0.90 \\
+uRLLC & Floored Euclidean projection instead of the guarded arbiter (variant) & \textbf{1.00} & \textbf{0.09} & 33.76 & 0.90 \\
+uRLLC & Distributed Fuzzy-BDIx-PPO & 1.01 & 0.26 & 33.76 & \textbf{0.97} \\
+\midrule
+mMTC & Centralized instead of distributed (global state, joint action) (variant) & \textbf{3.57} & \textbf{0.00} & \textbf{0.07} & 0.90 \\
+mMTC & Without fuzzy reward shaping (crisp SLA reward) (variant) & 4.00 & \textbf{0.00} & \textbf{0.07} & \textbf{1.00} \\
+mMTC & Without the BDIx plan gate (variant) & 4.00 & \textbf{0.00} & \textbf{0.07} & \textbf{1.00} \\
+mMTC & Without the isolation term (variant) & 3.71 & \textbf{0.00} & \textbf{0.07} & 0.89 \\
+mMTC & Floored Euclidean projection instead of the guarded arbiter (variant) & 4.00 & \textbf{0.00} & \textbf{0.07} & \textbf{1.00} \\
+mMTC & Distributed Fuzzy-BDIx-PPO & 4.00 & \textbf{0.00} & \textbf{0.07} & \textbf{1.00} \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.so
+plan_table_*.npy
+regenerated/
+.DS_Store
+Thumbs.db
+desktop.ini

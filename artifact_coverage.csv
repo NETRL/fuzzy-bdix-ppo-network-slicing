@@ -1,0 +1,15 @@
+method,manuscript_seed_summary,core_episode_seeds,comparators_episode_seeds,core_checkpoint_seeds,comparators_checkpoint_seeds,core_interval_seeds,comparators_interval_seeds,adapted_seed0_interval,interpretation
+C-PPO,0 1 2,0 1 2,0 1 2,0 1 2,,0 1 2,,0,Core controller or ablation.
+D-PPO,0 1 2,0 1 2,0 1 2,0 1 2,,0 1 2,,0,Core controller or ablation.
+D-PPO-Lagrangian,0 1 2,0 1 2,0 1 2,0 1 2,,0 1 2,,0,"Auxiliary distributed variant, distinct from the single-agent Table IX comparator."
+D-PPO-crisp,0 1 2,0 1 2,0 1 2,0 1 2,,0 1 2,,0,Core controller or ablation.
+D-PPO-euclid,0 1 2,0 1 2,,0 1 2,,0 1 2,,,Seed-0 interval log original; seed 1 and 2 detailed logs regenerated and validated from original trained checkpoints.
+D-PPO-nogate,0 1 2,0 1 2,0 1 2,0 1 2,,0 1 2,,0,Core controller or ablation.
+D-PPO-noiso,0 1 2,0 1 2,0 1 2,0 1 2,,0 1 2,,0,Core controller or ablation.
+DQN,0 1 2,,0 1 2,,0 1 2,,0 1 2,0,Original Table IX comparator. Seed-0 interval logs and per-episode records are from successive stochastic evaluations. Table uses the comparator episode records. A separate reconstructed interval export of the tabulated DQN seed-0 evaluation is supplied.
+MAPPO,0 1 2,,0 1 2,,0 1 2,,0 1 2,0,Original Table IX comparator; use the comparators source and records.
+PPO-Lagrangian,0 1 2,,0 1 2,,0 1 2,,0 1 2,0,Original Table IX single-agent comparator; use the comparators source and records.
+clairvoyant,0,,0,,,0,,0,Gated reference series in adapted seed-0 logs and comparator episode records. The same-named core interval series were generated without the gate.
+random,0,,0,,,0,,0,Gated reference series in adapted seed-0 logs and comparator episode records. The same-named core interval series were generated without the gate.
+rule,0,,0,,,0,,0,Gated reference series in adapted seed-0 logs and comparator episode records. The same-named core interval series were generated without the gate.
+static,0,,0,,,0,,0,Gated reference series in adapted seed-0 logs and comparator episode records. The same-named core interval series were generated without the gate.
