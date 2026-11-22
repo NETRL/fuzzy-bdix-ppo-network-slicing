@@ -1,0 +1,7 @@
+classifier,class,precision,recall,f1
+Random Forest,D2D_Client,100.00,95.00,97.44
+Random Forest,D2D_MultiHop_Relay,99.61,99.22,99.41
+Random Forest,D2D_Relay,78.10,87.86,82.69
+XGBoost,D2D_Client,100.00,95.00,97.44
+XGBoost,D2D_MultiHop_Relay,99.77,98.48,99.12
+XGBoost,D2D_Relay,66.16,92.86,77.27

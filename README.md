@@ -2,7 +2,7 @@
 
 This repository accompanies *Distributed Artificial Intelligence-Aided Network Slicing for Beyond Fifth-Generation Networks*. It contains the packet simulator, controllers, request trace, trained checkpoints and evaluation records used to compare radio resource allocation across three network slices. You can reproduce the reported tables directly from the episode records, replay saved policies to regenerate interval logs or train new policies.
 
-## Reproduce Tables IX and XI
+## Reproduce Tables IX, XI and XVI
 
 From the repository root, run the following commands with Python 3.11 or later. These commands use only the standard library.
 
@@ -10,9 +10,10 @@ From the repository root, run the following commands with Python 3.11 or later. 
 python tools/check_payload.py --deep
 python tools/reproduce_table_ix.py --out regenerated/table_IX
 python tools/reproduce_table_xi.py --out regenerated/table_XI
+python tools/reproduce_table_xvi.py --out regenerated/table_XVI
 ```
 
-The first command verifies the file hashes, the trace workbook, the structure of 30 checkpoint files and the row counts and checksums of 48 compressed interval logs. The next two commands create aggregate and per-seed CSVs and compare the output against `reference_tables/`. Table IX contains 48 numerical entries for the learning-controller comparison. Table XI contains 72 entries for the component comparisons. For each controller and slice, the scripts average the 20 windows within each training seed and then average the three seed means. The reported quantities are mean served-packet delay in milliseconds, packet deadline misses in percent, throughput in Mbit/s and a dimensionless isolation index.
+The first command verifies the file hashes, the trace workbook, the structure of 30 checkpoint files and the row counts and checksums of 48 compressed interval logs. The next two commands create aggregate and per-seed CSVs and compare the output against `reference_tables/`. Table IX contains 48 numerical entries for the learning-controller comparison. Table XI contains 72 entries for the component comparisons. For each controller and slice, the scripts average the 20 windows within each training seed and then average the three seed means. The reported quantities are mean served-packet delay in milliseconds, packet deadline misses in percent, throughput in Mbit/s and a dimensionless isolation index. The last command recalculates the 18 class scores of Table XVI, nine for each classifier, from the confusion matrix counts in `supplementary_d2d/results/confusion_matrices.csv` and compares them with `reference_tables/`.
 
 ## How the simulator works
 
@@ -33,6 +34,7 @@ The first command verifies the file hashes, the trace workbook, the structure of
 | `comparators/` | Campaign and simulation version for the deep Q-network (DQN), multi-agent PPO (MAPPO) and single-agent PPO-Lagrangian results in Table IX. The workbook in this tree matches the one in `code/data/`. |
 | `code/report_tools/fbp/` and `tools/` | Plotting, table reconstruction, checkpoint replay and integrity checks. |
 | `reference_figures/` and `reconstructed/` | Manuscript plots used for comparison and one interval export regenerated from a saved policy. |
+| `supplementary_d2d/` | Generator, cases, classifiers, predictions and scores of the supplementary D2D classification, with ten repeated datasets, other link conditions and a second scenario. |
 
 Use the driver and environment from the same tree as the saved checkpoint. The Table IX comparators and the rounded Euclidean ablation come from different campaign versions. `artifact_coverage.csv` identifies the available files and seeds for each method. `MANIFEST.sha256` records the file digests.
 
@@ -105,4 +107,4 @@ The original priority-weight, reward-weight and fluid-bound scripts write direct
 
 ## Supplementary D2D classification
 
-The two confusion matrices of the supplementary D2D classification are in `reference_figures/image28_hd.pdf` and `reference_figures/image29_hd.pdf`. They support recalculation of the reported class scores after removing the hop-count feature. The data and code of that classification are not part of this repository. That separate experiment supplies no input to the network slicing simulator.
+The supplementary D2D classification of the manuscript (Figure 19 and Table XVI) is a synthetic experiment in `supplementary_d2d/`. The directory contains the generator, the 45,000 generated cases, the training and evaluation code, the four fitted classifiers, the per-case predictions and the score tables. All paths of the reported dataset belong to one network. Without hop count, the accuracy is 98.86% for Random Forest and 98.30% for XGBoost. The directory also holds the scores of ten further datasets generated with other seeds, of eleven single networks with other link conditions (89.02% to 99.80%) and of a second scenario in which the link conditions are drawn independently for every path (87.31% and 78.49%). `reference_figures/image28_hd.pdf` and `reference_figures/image29_hd.pdf` are the two panels of Figure 19. The commands are given in `supplementary_d2d/README.md` and the link model is defined in `supplementary_d2d/MODEL.md`. That separate experiment supplies no input to the network slicing simulator.
