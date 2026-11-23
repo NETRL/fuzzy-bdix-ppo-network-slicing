@@ -1,0 +1,7 @@
+method,slice,latency,sla_viol,throughput,isolation,msgs_per_s
+C-PPO,eMBB,2.04,0.07,151.84,0.99,431.0
+D-PPO,eMBB,1.13,0.00,151.85,0.98,506.3
+C-PPO,uRLLC,1.00,0.12,33.76,0.97,431.0
+D-PPO,uRLLC,1.01,0.26,33.76,0.97,506.3
+C-PPO,mMTC,3.57,0.00,0.07,0.90,431.0
+D-PPO,mMTC,4.00,0.00,0.07,1.00,506.3

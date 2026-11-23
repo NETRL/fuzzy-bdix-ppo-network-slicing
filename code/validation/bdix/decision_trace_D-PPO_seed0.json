@@ -1,0 +1,5642 @@
+[
+ {
+  "slice": "eMBB",
+  "interval": 0,
+  "trace_index": 12000,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.0,
+   "timely_share": 1.0051170509061633,
+   "requested_rate": 1.2311375168426935,
+   "requested_latency": 0.8571428571428571,
+   "requested_reliability": 0.9949089999999999,
+   "granted_fraction": 0.34,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 41.1,
+   "reliability_floor": 0.9949089999999999,
+   "requested_rate_mbps": 785.74,
+   "isolation_level": 0.5
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.0,
+   "reliability_ratio": 1.0051170509061633
+  },
+  "intention": "IMMEDIATE",
+  "plan_inference": {
+   "request": {
+    "load": 0.2,
+    "latency_requirement": 0.8571428571428571,
+    "reliability_requirement": 0.9949089999999999,
+    "isolation": 0.5,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.6,
+     "Medium": 0.4,
+     "High": 0.0
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.2857142857142858,
+     "High": 0.7142857142857142
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.010182000000000135,
+     "High": 0.9898179999999999
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Low",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.42420771428571413,
+     "consequent": 83.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.2828051428571428,
+     "consequent": 68.0
+    },
+    {
+     "load": "Low",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.16968308571428575,
+     "consequent": 88.0
+    }
+   ],
+   "score": 78.32675142857143,
+   "plan": "IMMEDIATE"
+  },
+  "policy_action": 1,
+  "effective_action": 1,
+  "step_prbs": 10,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "uRLLC",
+  "interval": 0,
+  "trace_index": 12000,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.0,
+   "timely_share": 1.000002470006101,
+   "requested_rate": 0.07242330621099762,
+   "requested_latency": 0.7274879381297286,
+   "requested_reliability": 0.99999753,
+   "granted_fraction": 0.33,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 2.652310076,
+   "reliability_floor": 0.99999753,
+   "requested_rate_mbps": 24.33575296,
+   "isolation_level": 0.5
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.0,
+   "reliability_ratio": 1.000002470006101
+  },
+  "intention": "OPTIMIZE",
+  "plan_inference": {
+   "request": {
+    "load": 0.6,
+    "latency_requirement": 0.7274879381297286,
+    "reliability_requirement": 0.99999753,
+    "isolation": 0.5,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.8,
+     "High": 0.19999999999999996
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.5450241237405429,
+     "High": 0.4549758762594571
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 4.939999999953315e-06,
+     "High": 0.99999506
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.4360171450570973,
+     "consequent": 73.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.3639789029429028,
+     "consequent": 68.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.1090042862642743,
+     "consequent": 58.0
+    }
+   ],
+   "score": 67.72507121870272,
+   "plan": "OPTIMIZE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "mMTC",
+  "interval": 0,
+  "trace_index": 12000,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.0,
+   "timely_share": 1.0095605382976789,
+   "requested_rate": 8.086092819788985e-05,
+   "requested_latency": 0.8291062857216714,
+   "requested_reliability": 0.99053,
+   "granted_fraction": 0.33,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 153.956,
+   "reliability_floor": 0.99053,
+   "requested_rate_mbps": 0.0262,
+   "isolation_level": 0.0
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.0,
+   "reliability_ratio": 1.0095605382976789
+  },
+  "intention": "OPTIMIZE",
+  "plan_inference": {
+   "request": {
+    "load": 0.8,
+    "latency_requirement": 0.8291062857216714,
+    "reliability_requirement": 0.99053,
+    "isolation": 0.0,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.3999999999999999,
+     "High": 0.6000000000000001
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.3417874285566571,
+     "High": 0.6582125714433429
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.018939999999999957,
+     "High": 0.98106
+    },
+    "isolation": {
+     "Low": 1.0,
+     "Medium": 0.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "High",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.38744761520412363,
+     "consequent": 43.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.25829841013608235,
+     "consequent": 58.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.20118838479587645,
+     "consequent": 48.0
+    }
+   ],
+   "score": 50.51953714278328,
+   "plan": "OPTIMIZE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "eMBB",
+  "interval": 1,
+  "trace_index": 12001,
+  "beliefs": {
+   "backlog": 0.06672363204290818,
+   "oldest_age": 0.11097850796204958,
+   "served_delay": 0.09120009344779864,
+   "timely_share": 1.0098021494648552,
+   "requested_rate": 0.23772803680217966,
+   "requested_latency": 0.5330552659019812,
+   "requested_reliability": 0.9902930000000001,
+   "granted_fraction": 0.44,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 25.56,
+   "reliability_floor": 0.9902930000000001,
+   "requested_rate_mbps": 86.95,
+   "isolation_level": 0.0
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.11737089201877934,
+   "reliability_ratio": 1.0098021494648552
+  },
+  "intention": "OPTIMIZE",
+  "plan_inference": {
+   "request": {
+    "load": 0.2,
+    "latency_requirement": 0.5330552659019812,
+    "reliability_requirement": 0.9902930000000001,
+    "isolation": 0.0,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.6,
+     "Medium": 0.4,
+     "High": 0.0
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.9338894681960377,
+     "High": 0.06611053180396231
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.01941399999999982,
+     "High": 0.9805860000000002
+    },
+    "isolation": {
+     "Low": 1.0,
+     "Medium": 0.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Low",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.5494553628362879,
+     "consequent": 78.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.366303575224192,
+     "consequent": 63.0
+    },
+    {
+     "load": "Low",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.03889623716371212,
+     "consequent": 73.0
+    }
+   ],
+   "score": 71.47530734098018,
+   "plan": "OPTIMIZE"
+  },
+  "policy_action": 1,
+  "effective_action": 1,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "uRLLC",
+  "interval": 1,
+  "trace_index": 12001,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.3285894889114736,
+   "timely_share": 1.0000067800459687,
+   "requested_rate": 0.03885024674705278,
+   "requested_latency": 0.7050882666846454,
+   "requested_reliability": 0.99999322,
+   "granted_fraction": 0.28,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 2.57064429,
+   "reliability_floor": 0.99999322,
+   "requested_rate_mbps": 12.83519076,
+   "isolation_level": 0.5
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.38900753553888234,
+   "reliability_ratio": 1.0000067800459687
+  },
+  "intention": "OPTIMIZE",
+  "plan_inference": {
+   "request": {
+    "load": 0.6,
+    "latency_requirement": 0.7050882666846454,
+    "reliability_requirement": 0.99999322,
+    "isolation": 0.5,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.8,
+     "High": 0.19999999999999996
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.5898234666307092,
+     "High": 0.41017653336929083
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 1.3559999999968042e-05,
+     "High": 0.99998644
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.4718523748996014,
+     "consequent": 73.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.3281367771003987,
+     "consequent": 68.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.11796309372490031,
+     "consequent": 58.0
+    }
+   ],
+   "score": 67.94898173315356,
+   "plan": "OPTIMIZE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "mMTC",
+  "interval": 1,
+  "trace_index": 12001,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.0,
+   "timely_share": 1.0225785340314135,
+   "requested_rate": 5.987475068121642e-05,
+   "requested_latency": 0.9416977086969566,
+   "requested_reliability": 0.97792,
+   "granted_fraction": 0.28,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 174.863,
+   "reliability_floor": 0.97792,
+   "requested_rate_mbps": 0.0194,
+   "isolation_level": 0.0
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.0,
+   "reliability_ratio": 1.0225785340314135
+  },
+  "intention": "OPTIMIZE",
+  "plan_inference": {
+   "request": {
+    "load": 0.3,
+    "latency_requirement": 0.9416977086969566,
+    "reliability_requirement": 0.97792,
+    "isolation": 0.0,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.4,
+     "Medium": 0.6,
+     "High": 0.0
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.11660458260608686,
+     "High": 0.8833954173939131
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.04415999999999998,
+     "High": 0.95584
+    },
+    "isolation": {
+     "Low": 1.0,
+     "Medium": 0.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Medium",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.5066308054570787,
+     "consequent": 58.0
+    },
+    {
+     "load": "Low",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.3377538703047192,
+     "consequent": 73.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.06687319454292125,
+     "consequent": 63.0
+    }
+   ],
+   "score": 64.14142291303042,
+   "plan": "OPTIMIZE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "eMBB",
+  "interval": 2,
+  "trace_index": 12002,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.06321667129674419,
+   "timely_share": 1.0027435062330536,
+   "requested_rate": 0.5693914829039655,
+   "requested_latency": 0.9912408759124087,
+   "requested_reliability": 0.9972639999999999,
+   "granted_fraction": 0.49,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 47.53,
+   "reliability_floor": 0.9972639999999999,
+   "requested_rate_mbps": 248.57,
+   "isolation_level": 1.0
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.06525762497904981,
+   "reliability_ratio": 1.0027435062330536
+  },
+  "intention": "IMMEDIATE",
+  "plan_inference": {
+   "request": {
+    "load": 0.2,
+    "latency_requirement": 0.9912408759124087,
+    "reliability_requirement": 0.9972639999999999,
+    "isolation": 1.0,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.6,
+     "Medium": 0.4,
+     "High": 0.0
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.01751824817518255,
+     "High": 0.9824817518248175
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.005472000000000143,
+     "High": 0.9945279999999999
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 0.0,
+     "High": 1.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Low",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.5862633670072992,
+     "consequent": 93.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.3908422446715328,
+     "consequent": 78.0
+    },
+    {
+     "load": "Low",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.01045343299270077,
+     "consequent": 98.0
+    }
+   ],
+   "score": 87.03287124087592,
+   "plan": "IMMEDIATE"
+  },
+  "policy_action": 1,
+  "effective_action": 1,
+  "step_prbs": 10,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "uRLLC",
+  "interval": 2,
+  "trace_index": 12002,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.5473664854247637,
+   "timely_share": 1.000003630013177,
+   "requested_rate": 0.08242153618703099,
+   "requested_latency": 0.3764055554528034,
+   "requested_reliability": 0.9999963700000001,
+   "granted_fraction": 0.23,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 1.372317251,
+   "reliability_floor": 0.9999963700000001,
+   "requested_rate_mbps": 27.83596272,
+   "isolation_level": 0.5
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.7286944759102209,
+   "reliability_ratio": 1.000003630013177
+  },
+  "intention": "IMMEDIATE",
+  "plan_inference": {
+   "request": {
+    "load": 0.3,
+    "latency_requirement": 0.3764055554528034,
+    "reliability_requirement": 0.9999963700000001,
+    "isolation": 0.5,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.4,
+     "Medium": 0.6,
+     "High": 0.0
+    },
+    "latency_requirement": {
+     "Low": 0.24718888909439318,
+     "Medium": 0.7528111109056068,
+     "High": 0.0
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 7.2599999998423925e-06,
+     "High": 0.9999927400000002
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.45168338729816504,
+     "consequent": 73.0
+    },
+    {
+     "load": "Low",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.3011222581987767,
+     "consequent": 88.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Low",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.14831225670183504,
+     "consequent": 78.0
+    }
+   ],
+   "score": 80.23587184547196,
+   "plan": "IMMEDIATE"
+  },
+  "policy_action": 1,
+  "effective_action": 1,
+  "step_prbs": 10,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "mMTC",
+  "interval": 2,
+  "trace_index": 12002,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.0,
+   "timely_share": 1.0326844632622503,
+   "requested_rate": 0.00018485945564778908,
+   "requested_latency": 0.9630452191324101,
+   "requested_reliability": 0.9683499999999999,
+   "granted_fraction": 0.23,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 178.827,
+   "reliability_floor": 0.9683499999999999,
+   "requested_rate_mbps": 0.0599,
+   "isolation_level": 0.5
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.0,
+   "reliability_ratio": 1.0326844632622503
+  },
+  "intention": "OPTIMIZE",
+  "plan_inference": {
+   "request": {
+    "load": 0.95,
+    "latency_requirement": 0.9630452191324101,
+    "reliability_requirement": 0.9683499999999999,
+    "isolation": 0.5,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.10000000000000009,
+     "High": 0.8999999999999999
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.07390956173517971,
+     "High": 0.9260904382648203
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.06330000000000013,
+     "High": 0.9366999999999999
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "High",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.7807220221703912,
+     "consequent": 53.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.08674689135226578,
+     "consequent": 68.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.06230797782960853,
+     "consequent": 58.0
+    }
+   ],
+   "score": 54.236547808675894,
+   "plan": "OPTIMIZE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "eMBB",
+  "interval": 3,
+  "trace_index": 12003,
+  "beliefs": {
+   "backlog": 0.011928570865273802,
+   "oldest_age": 0.04014991292720401,
+   "served_delay": 0.053018893085532495,
+   "timely_share": 1.001401962747847,
+   "requested_rate": 0.8165249616403158,
+   "requested_latency": 0.5090719499478623,
+   "requested_reliability": 0.9986,
+   "granted_fraction": 0.59,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 24.41,
+   "reliability_floor": 0.9986,
+   "requested_rate_mbps": 409.09,
+   "isolation_level": 1.0
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.054449566737018965,
+   "reliability_ratio": 1.001401962747847
+  },
+  "intention": "IMMEDIATE",
+  "plan_inference": {
+   "request": {
+    "load": 0.5,
+    "latency_requirement": 0.5090719499478623,
+    "reliability_requirement": 0.9986,
+    "isolation": 1.0,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.9818561001042754,
+     "High": 0.018143899895724624
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.0027999999999999137,
+     "High": 0.9972000000000001
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 0.0,
+     "High": 1.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.9791069030239835,
+     "consequent": 83.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.018093096976016597,
+     "consequent": 78.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "Medium",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.002749197080291886,
+     "consequent": 73.0
+    }
+   ],
+   "score": 82.88128050052137,
+   "plan": "IMMEDIATE"
+  },
+  "policy_action": 1,
+  "effective_action": 1,
+  "step_prbs": 10,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "uRLLC",
+  "interval": 3,
+  "trace_index": 12003,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.3085946854484656,
+   "timely_share": 1.0000084000705607,
+   "requested_rate": 0.05435564288913581,
+   "requested_latency": 0.7587185176297295,
+   "requested_reliability": 0.9999916,
+   "granted_fraction": 0.33,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 2.766172006,
+   "reliability_floor": 0.9999916,
+   "requested_rate_mbps": 18.09865442,
+   "isolation_level": 0.5
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.3615104186691708,
+   "reliability_ratio": 1.0000084000705607
+  },
+  "intention": "OPTIMIZE",
+  "plan_inference": {
+   "request": {
+    "load": 0.6,
+    "latency_requirement": 0.7587185176297295,
+    "reliability_requirement": 0.9999916,
+    "isolation": 0.5,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.8,
+     "High": 0.19999999999999996
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.48256296474054095,
+     "High": 0.517437035259459
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 1.6800000000039006e-05,
+     "High": 0.9999832
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Medium",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.41394267385381334,
+     "consequent": 68.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.3860438861461867,
+     "consequent": 73.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.1034856684634533,
+     "consequent": 53.0
+    }
+   ],
+   "score": 67.4126468237027,
+   "plan": "OPTIMIZE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "mMTC",
+  "interval": 3,
+  "trace_index": 12003,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.0,
+   "timely_share": 1.0333460779349612,
+   "requested_rate": 0.00031507381582202893,
+   "requested_latency": 0.9026862642987662,
+   "requested_reliability": 0.96773,
+   "granted_fraction": 0.08,
+   "isolation": 0.5652173913043479,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 167.619,
+   "reliability_floor": 0.96773,
+   "requested_rate_mbps": 0.1021,
+   "isolation_level": 1.0
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.0,
+   "reliability_ratio": 1.0333460779349612
+  },
+  "intention": "OPTIMIZE",
+  "plan_inference": {
+   "request": {
+    "load": 0.8,
+    "latency_requirement": 0.9026862642987662,
+    "reliability_requirement": 0.96773,
+    "isolation": 1.0,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.3999999999999999,
+     "High": 0.6000000000000001
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.1946274714024676,
+     "High": 0.8053725285975324
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.06454000000000004,
+     "High": 0.93546
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 0.0,
+     "High": 1.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "High",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.45203627136110863,
+     "consequent": 63.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.301357514240739,
+     "consequent": 78.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.10923972863889142,
+     "consequent": 68.0
+    }
+   ],
+   "score": 69.32773735701234,
+   "plan": "OPTIMIZE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "eMBB",
+  "interval": 4,
+  "trace_index": 12004,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.06029366161797396,
+   "timely_share": 1.0092304214344392,
+   "requested_rate": 0.3900380790893085,
+   "requested_latency": 0.37413972888425445,
+   "requested_reliability": 0.9908540000000001,
+   "granted_fraction": 0.69,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 17.94,
+   "reliability_floor": 0.9908540000000001,
+   "requested_rate_mbps": 154.56,
+   "isolation_level": 0.0
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.06214841297300068,
+   "reliability_ratio": 1.0092304214344392
+  },
+  "intention": "OPTIMIZE",
+  "plan_inference": {
+   "request": {
+    "load": 0.5,
+    "latency_requirement": 0.37413972888425445,
+    "reliability_requirement": 0.9908540000000001,
+    "isolation": 0.0,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    },
+    "latency_requirement": {
+     "Low": 0.2517205422314911,
+     "Medium": 0.7482794577685089,
+     "High": 0.0
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.018291999999999753,
+     "High": 0.9817080000000002
+    },
+    "isolation": {
+     "Low": 1.0,
+     "Medium": 0.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.7345919299270075,
+     "consequent": 63.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Low",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.24711607007299272,
+     "consequent": 68.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "Medium",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.01368752784150138,
+     "consequent": 53.0
+    }
+   ],
+   "score": 64.07568271115746,
+   "plan": "OPTIMIZE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "uRLLC",
+  "interval": 4,
+  "trace_index": 12004,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.4891316724838967,
+   "timely_share": 1.0000051900269362,
+   "requested_rate": 0.1937032653315583,
+   "requested_latency": 0.4347517642181855,
+   "requested_reliability": 0.99999481,
+   "granted_fraction": 0.28,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 1.58503863,
+   "reliability_floor": 0.99999481,
+   "requested_rate_mbps": 69.25048731,
+   "isolation_level": 0.5
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.6308994500657691,
+   "reliability_ratio": 1.0000051900269362
+  },
+  "intention": "OPTIMIZE",
+  "plan_inference": {
+   "request": {
+    "load": 0.9,
+    "latency_requirement": 0.4347517642181855,
+    "reliability_requirement": 0.99999481,
+    "isolation": 0.5,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.19999999999999996,
+     "High": 0.8
+    },
+    "latency_requirement": {
+     "Low": 0.13049647156362898,
+     "Medium": 0.869503528436371,
+     "High": 0.0
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 1.0379999999976519e-05,
+     "High": 0.99998962
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "High",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.6955956023917967,
+     "consequent": 58.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.17389890059794913,
+     "consequent": 73.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "Low",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.10439609360820333,
+     "consequent": 63.0
+    }
+   ],
+   "score": 61.65237855781815,
+   "plan": "OPTIMIZE"
+  },
+  "policy_action": 1,
+  "effective_action": 1,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "mMTC",
+  "interval": 4,
+  "trace_index": 12004,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.0,
+   "timely_share": 1.0205018828259738,
+   "requested_rate": 0.00010153805471378541,
+   "requested_latency": 0.9577244975607078,
+   "requested_reliability": 0.97991,
+   "granted_fraction": 0.03,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 177.839,
+   "reliability_floor": 0.97991,
+   "requested_rate_mbps": 0.0329,
+   "isolation_level": 1.0
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.0,
+   "reliability_ratio": 1.0205018828259738
+  },
+  "intention": "OPTIMIZE",
+  "plan_inference": {
+   "request": {
+    "load": 0.8,
+    "latency_requirement": 0.9577244975607078,
+    "reliability_requirement": 0.97991,
+    "isolation": 1.0,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.3999999999999999,
+     "High": 0.6000000000000001
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.08455100487858447,
+     "High": 0.9154489951214155
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.040180000000000105,
+     "High": 0.9598199999999999
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 0.0,
+     "High": 1.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "High",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.5271997526984622,
+     "consequent": 63.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.3514665017989747,
+     "consequent": 78.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.04869224730153777,
+     "consequent": 68.0
+    }
+   ],
+   "score": 69.02095502439292,
+   "plan": "OPTIMIZE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "eMBB",
+  "interval": 5,
+  "trace_index": 12005,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.08289748139657084,
+   "timely_share": 1.0086054214558613,
+   "requested_rate": 0.3500045984180386,
+   "requested_latency": 0.24129301355578728,
+   "requested_reliability": 0.991468,
+   "granted_fraction": 0.64,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 11.57,
+   "reliability_floor": 0.991468,
+   "requested_rate_mbps": 135.78,
+   "isolation_level": 0.0
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.08643042350907519,
+   "reliability_ratio": 1.0086054214558613
+  },
+  "intention": "OPTIMIZE",
+  "plan_inference": {
+   "request": {
+    "load": 0.5,
+    "latency_requirement": 0.24129301355578728,
+    "reliability_requirement": 0.991468,
+    "isolation": 0.0,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    },
+    "latency_requirement": {
+     "Low": 0.5174139728884255,
+     "Medium": 0.4825860271115745,
+     "High": 0.0
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.017063999999999968,
+     "High": 0.982936
+    },
+    "isolation": {
+     "Low": 1.0,
+     "Medium": 0.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Medium",
+     "latency_requirement": "Low",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.5085848208550574,
+     "consequent": 68.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.4743511791449426,
+     "consequent": 63.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Low",
+     "reliability_requirement": "Medium",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.008829152033368075,
+     "consequent": 58.0
+    }
+   ],
+   "score": 65.41642986444214,
+   "plan": "OPTIMIZE"
+  },
+  "policy_action": 1,
+  "effective_action": 1,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "uRLLC",
+  "interval": 5,
+  "trace_index": 12005,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.529164437544969,
+   "timely_share": 1.0000020500042024,
+   "requested_rate": 0.08511839925879054,
+   "requested_latency": 0.39323212077247865,
+   "requested_reliability": 0.99999795,
+   "granted_fraction": 0.33,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 1.433664342,
+   "reliability_floor": 0.99999795,
+   "requested_rate_mbps": 28.78609675,
+   "isolation_level": 0.5
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.6975133374698944,
+   "reliability_ratio": 1.0000020500042024
+  },
+  "intention": "OPTIMIZE",
+  "plan_inference": {
+   "request": {
+    "load": 0.6,
+    "latency_requirement": 0.39323212077247865,
+    "reliability_requirement": 0.99999795,
+    "isolation": 0.5,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.8,
+     "High": 0.19999999999999996
+    },
+    "latency_requirement": {
+     "Low": 0.2135357584550427,
+     "Medium": 0.7864642415449573,
+     "High": 0.0
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 4.099999999951365e-06,
+     "High": 0.9999959
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.6291688136332537,
+     "consequent": 73.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Low",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.17082790636674644,
+     "consequent": 78.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.15729220340831337,
+     "consequent": 58.0
+    }
+   ],
+   "score": 71.06763779227522,
+   "plan": "OPTIMIZE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "mMTC",
+  "interval": 5,
+  "trace_index": 12005,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.0,
+   "timely_share": 1.0190148164754316,
+   "requested_rate": 0.00018609379458677,
+   "requested_latency": 0.4962434520927724,
+   "requested_reliability": 0.98134,
+   "granted_fraction": 0.02,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 92.147,
+   "reliability_floor": 0.98134,
+   "requested_rate_mbps": 0.0603,
+   "isolation_level": 1.0
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.0,
+   "reliability_ratio": 1.0190148164754316
+  },
+  "intention": "IMMEDIATE",
+  "plan_inference": {
+   "request": {
+    "load": 0.3,
+    "latency_requirement": 0.4962434520927724,
+    "reliability_requirement": 0.98134,
+    "isolation": 1.0,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.4,
+     "Medium": 0.6,
+     "High": 0.0
+    },
+    "latency_requirement": {
+     "Low": 0.007513095814455251,
+     "Medium": 0.9924869041855447,
+     "High": 0.0
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.03732000000000002,
+     "High": 0.96268
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 0.0,
+     "High": 1.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.5732683757528041,
+     "consequent": 83.0
+    },
+    {
+     "load": "Low",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.38217891716853614,
+     "consequent": 98.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "Medium",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.02222376675852273,
+     "consequent": 73.0
+    }
+   ],
+   "score": 88.65568623057788,
+   "plan": "IMMEDIATE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "eMBB",
+  "interval": 6,
+  "trace_index": 12006,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.0632321852235157,
+   "timely_share": 1.0065931853641352,
+   "requested_rate": 0.45472547329719154,
+   "requested_latency": 0.3194994786235662,
+   "requested_reliability": 0.9934499999999999,
+   "granted_fraction": 0.69,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 15.32,
+   "reliability_floor": 0.9934499999999999,
+   "requested_rate_mbps": 186.54,
+   "isolation_level": 1.0
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.06527415143603132,
+   "reliability_ratio": 1.0065931853641352
+  },
+  "intention": "OPTIMIZE",
+  "plan_inference": {
+   "request": {
+    "load": 0.9,
+    "latency_requirement": 0.3194994786235662,
+    "reliability_requirement": 0.9934499999999999,
+    "isolation": 1.0,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.19999999999999996,
+     "High": 0.8
+    },
+    "latency_requirement": {
+     "Low": 0.3610010427528676,
+     "Medium": 0.6389989572471324,
+     "High": 0.0
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.013100000000000112,
+     "High": 0.9868999999999999
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 0.0,
+     "High": 1.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "High",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.504502456725756,
+     "consequent": 68.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "Low",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.285017543274244,
+     "consequent": 73.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.12612561418143897,
+     "consequent": 83.0
+    }
+   ],
+   "score": 72.67400521376435,
+   "plan": "OPTIMIZE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "uRLLC",
+  "interval": 6,
+  "trace_index": 12006,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.18232155679395465,
+   "timely_share": 1.0000020600042436,
+   "requested_rate": 0.09512478116563619,
+   "requested_latency": 1.3714232448018808,
+   "requested_reliability": 0.99999794,
+   "granted_fraction": 0.28,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 5.0,
+   "reliability_floor": 0.99999794,
+   "requested_rate_mbps": 32.33393005,
+   "isolation_level": 0.5
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.2,
+   "reliability_ratio": 1.0000020600042436
+  },
+  "intention": "OPTIMIZE",
+  "plan_inference": {
+   "request": {
+    "load": 0.6,
+    "latency_requirement": 1.0,
+    "reliability_requirement": 0.99999794,
+    "isolation": 0.5,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.8,
+     "High": 0.19999999999999996
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.0,
+     "High": 1.0
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 4.12000000005186e-06,
+     "High": 0.99999588
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Medium",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.799996704,
+     "consequent": 68.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.19999917599999995,
+     "consequent": 53.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "High",
+     "reliability_requirement": "Medium",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 3.296000000041488e-06,
+     "consequent": 58.0
+    }
+   ],
+   "score": 64.99995879999999,
+   "plan": "OPTIMIZE"
+  },
+  "policy_action": 1,
+  "effective_action": 1,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "mMTC",
+  "interval": 6,
+  "trace_index": 12006,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.0,
+   "timely_share": 1.0064412238325282,
+   "requested_rate": 4.166579863522301e-05,
+   "requested_latency": 0.5992651157230017,
+   "requested_reliability": 0.9936,
+   "granted_fraction": 0.02,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 111.277,
+   "reliability_floor": 0.9936,
+   "requested_rate_mbps": 0.0135,
+   "isolation_level": 0.5
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.0,
+   "reliability_ratio": 1.0064412238325282
+  },
+  "intention": "OPTIMIZE",
+  "plan_inference": {
+   "request": {
+    "load": 0.6,
+    "latency_requirement": 0.5992651157230017,
+    "reliability_requirement": 0.9936,
+    "isolation": 0.5,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.8,
+     "High": 0.19999999999999996
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.8014697685539967,
+     "High": 0.19853023144600335
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.012799999999999923,
+     "High": 0.9872000000000001
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.6329687644132045,
+     "consequent": 73.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.15824219110330107,
+     "consequent": 58.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.1567912355867956,
+     "consequent": 68.0
+    }
+   ],
+   "score": 68.87934884276999,
+   "plan": "OPTIMIZE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "eMBB",
+  "interval": 7,
+  "trace_index": 12007,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.03606593557972973,
+   "timely_share": 1.0019959759841603,
+   "requested_rate": 0.3527629811928209,
+   "requested_latency": 0.567883211678832,
+   "requested_reliability": 0.998008,
+   "granted_fraction": 0.64,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 27.23,
+   "reliability_floor": 0.998008,
+   "requested_rate_mbps": 137.05,
+   "isolation_level": 1.0
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.03672420124862284,
+   "reliability_ratio": 1.0019959759841603
+  },
+  "intention": "OPTIMIZE",
+  "plan_inference": {
+   "request": {
+    "load": 0.9,
+    "latency_requirement": 0.567883211678832,
+    "reliability_requirement": 0.998008,
+    "isolation": 1.0,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.19999999999999996,
+     "High": 0.8
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.8642335766423359,
+     "High": 0.1357664233576641
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.0039839999999999876,
+     "High": 0.996016
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 0.0,
+     "High": 1.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "High",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.6886323760583943,
+     "consequent": 68.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.17215809401459856,
+     "consequent": 83.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.10818042394160574,
+     "consequent": 63.0
+    }
+   ],
+   "score": 70.28132788321167,
+   "plan": "OPTIMIZE"
+  },
+  "policy_action": 1,
+  "effective_action": 1,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "uRLLC",
+  "interval": 7,
+  "trace_index": 12007,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.32455783424917495,
+   "timely_share": 1.0000059800357606,
+   "requested_rate": 0.17349613805619507,
+   "requested_latency": 0.7153656565271224,
+   "requested_reliability": 0.99999402,
+   "granted_fraction": 0.33,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 2.608114086,
+   "reliability_floor": 0.99999402,
+   "requested_rate_mbps": 61.38377418,
+   "isolation_level": 0.5
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.38341881030736474,
+   "reliability_ratio": 1.0000059800357606
+  },
+  "intention": "IMMEDIATE",
+  "plan_inference": {
+   "request": {
+    "load": 0.3,
+    "latency_requirement": 0.7153656565271224,
+    "reliability_requirement": 0.99999402,
+    "isolation": 0.5,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.4,
+     "Medium": 0.6,
+     "High": 0.0
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.5692686869457553,
+     "High": 0.4307313130542447
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 1.1959999999922033e-05,
+     "High": 0.9999880400000001
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.3415571270953557,
+     "consequent": 73.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.25843569690464435,
+     "consequent": 68.0
+    },
+    {
+     "load": "Low",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.22770475139690377,
+     "consequent": 88.0
+    }
+   ],
+   "score": 76.84622383472878,
+   "plan": "IMMEDIATE"
+  },
+  "policy_action": 1,
+  "effective_action": 1,
+  "step_prbs": 10,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "mMTC",
+  "interval": 7,
+  "trace_index": 12007,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.0,
+   "timely_share": 1.0109587933195843,
+   "requested_rate": 4.475208503025778e-05,
+   "requested_latency": 0.6690214988386504,
+   "requested_reliability": 0.9891599999999999,
+   "granted_fraction": 0.02,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 124.23,
+   "reliability_floor": 0.9891599999999999,
+   "requested_rate_mbps": 0.0145,
+   "isolation_level": 1.0
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.0,
+   "reliability_ratio": 1.0109587933195843
+  },
+  "intention": "IMMEDIATE",
+  "plan_inference": {
+   "request": {
+    "load": 0.6,
+    "latency_requirement": 0.6690214988386504,
+    "reliability_requirement": 0.9891599999999999,
+    "isolation": 1.0,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.8,
+     "High": 0.19999999999999996
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.6619570023226993,
+     "High": 0.3380429976773007
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.021680000000000144,
+     "High": 0.9783199999999999
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 0.0,
+     "High": 1.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.5180846196098745,
+     "consequent": 83.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.26457138039012545,
+     "consequent": 78.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.12952115490246857,
+     "consequent": 68.0
+    }
+   ],
+   "score": 78.09298501161348,
+   "plan": "IMMEDIATE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "eMBB",
+  "interval": 8,
+  "trace_index": 12008,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.029448535541105648,
+   "timely_share": 1.0024781259272924,
+   "requested_rate": 0.4266183922908895,
+   "requested_latency": 0.6978102189781021,
+   "requested_reliability": 0.997528,
+   "granted_fraction": 0.69,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 33.46,
+   "reliability_floor": 0.997528,
+   "requested_rate_mbps": 172.39,
+   "isolation_level": 0.0
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.029886431560071727,
+   "reliability_ratio": 1.0024781259272924
+  },
+  "intention": "OPTIMIZE",
+  "plan_inference": {
+   "request": {
+    "load": 0.8,
+    "latency_requirement": 0.6978102189781021,
+    "reliability_requirement": 0.997528,
+    "isolation": 0.0,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.3999999999999999,
+     "High": 0.6000000000000001
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.6043795620437957,
+     "High": 0.3956204379562043
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.0049440000000000595,
+     "High": 0.9950559999999999
+    },
+    "isolation": {
+     "Low": 1.0,
+     "Medium": 0.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "High",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.36083490569343074,
+     "consequent": 48.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.2405566037956204,
+     "consequent": 63.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.23619869430656928,
+     "consequent": 43.0
+    }
+   ],
+   "score": 51.97245781021898,
+   "plan": "OPTIMIZE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "uRLLC",
+  "interval": 8,
+  "trace_index": 12008,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.27371817887518385,
+   "timely_share": 1.0000037400139876,
+   "requested_rate": 0.07336461514972424,
+   "requested_latency": 0.8711758060097935,
+   "requested_reliability": 0.9999962600000001,
+   "granted_fraction": 0.29,
+   "isolation": 0.5757575757575757,
+   "fault": 1.0
+  },
+  "desires": {
+   "latency_bound_ms": 3.176174129,
+   "reliability_floor": 0.9999962600000001,
+   "requested_rate_mbps": 24.66379889,
+   "isolation_level": 0.5
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.3148441991481255,
+   "reliability_ratio": 1.0000037400139876
+  },
+  "intention": "REJECT",
+  "plan_inference": {
+   "request": {
+    "load": 0.9,
+    "latency_requirement": 0.8711758060097935,
+    "reliability_requirement": 0.9999962600000001,
+    "isolation": 0.5,
+    "fault": true
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.19999999999999996,
+     "High": 0.8
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.257648387980413,
+     "High": 0.742351612019587
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 7.4799999998376165e-06,
+     "High": 0.9999925200000002
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "High",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": true,
+     "firing_strength": 0.5938768473836235,
+     "consequent": 0.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": true,
+     "firing_strength": 0.20611716861637677,
+     "consequent": 0.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": true,
+     "firing_strength": 0.1484692118459058,
+     "consequent": 0.0
+    }
+   ],
+   "score": 0.0,
+   "plan": "REJECT"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 0.3
+ },
+ {
+  "slice": "mMTC",
+  "interval": 8,
+  "trace_index": 12008,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.0,
+   "timely_share": 1.0408643337427401,
+   "requested_rate": 5.2776385079866314e-05,
+   "requested_latency": 0.759899207869498,
+   "requested_reliability": 0.9607399999999999,
+   "granted_fraction": 0.02,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 141.105,
+   "reliability_floor": 0.9607399999999999,
+   "requested_rate_mbps": 0.0171,
+   "isolation_level": 1.0
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.0,
+   "reliability_ratio": 1.0408643337427401
+  },
+  "intention": "IMMEDIATE",
+  "plan_inference": {
+   "request": {
+    "load": 0.3,
+    "latency_requirement": 0.759899207869498,
+    "reliability_requirement": 0.9607399999999999,
+    "isolation": 1.0,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.4,
+     "Medium": 0.6,
+     "High": 0.0
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.4802015842610039,
+     "High": 0.5197984157389961
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.07852000000000015,
+     "High": 0.9214799999999999
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 0.0,
+     "High": 1.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Medium",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.28739030648110203,
+     "consequent": 78.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.26549769351889785,
+     "consequent": 83.0
+    },
+    {
+     "load": "Low",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.19159353765406803,
+     "consequent": 93.0
+    }
+   ],
+   "score": 85.61580792130502,
+   "plan": "IMMEDIATE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "eMBB",
+  "interval": 9,
+  "trace_index": 12009,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.022477907492452532,
+   "timely_share": 1.0015855098621118,
+   "requested_rate": 0.7155487032780072,
+   "requested_latency": 0.9174139728884254,
+   "requested_reliability": 0.998417,
+   "granted_fraction": 0.64,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 43.99,
+   "reliability_floor": 0.998417,
+   "requested_rate_mbps": 338.68,
+   "isolation_level": 0.0
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.022732439190725165,
+   "reliability_ratio": 1.0015855098621118
+  },
+  "intention": "DEFER",
+  "plan_inference": {
+   "request": {
+    "load": 0.9,
+    "latency_requirement": 0.9174139728884254,
+    "reliability_requirement": 0.998417,
+    "isolation": 0.0,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.19999999999999996,
+     "High": 0.8
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.16517205422314918,
+     "High": 0.8348279457768508
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.003166000000000002,
+     "High": 0.996834
+    },
+    "isolation": {
+     "Low": 1.0,
+     "Medium": 0.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "High",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.6657479044004171,
+     "consequent": 43.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.16643697610010422,
+     "consequent": 58.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.13171929559958295,
+     "consequent": 48.0
+    }
+   ],
+   "score": 46.79420027111574,
+   "plan": "DEFER"
+  },
+  "policy_action": 2,
+  "effective_action": 0,
+  "step_prbs": 5,
+  "admitted_share": 0.3
+ },
+ {
+  "slice": "uRLLC",
+  "interval": 9,
+  "trace_index": 12009,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.33492272105784443,
+   "timely_share": 1.000004390019272,
+   "requested_rate": 0.04130051663250694,
+   "requested_latency": 0.6894478124152414,
+   "requested_reliability": 0.99999561,
+   "granted_fraction": 0.24,
+   "isolation": 1.0,
+   "fault": 1.0
+  },
+  "desires": {
+   "latency_bound_ms": 2.513621579,
+   "reliability_floor": 0.99999561,
+   "requested_rate_mbps": 13.66153986,
+   "isolation_level": 0.5
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.3978323580424673,
+   "reliability_ratio": 1.000004390019272
+  },
+  "intention": "REJECT",
+  "plan_inference": {
+   "request": {
+    "load": 0.9,
+    "latency_requirement": 0.6894478124152414,
+    "reliability_requirement": 0.99999561,
+    "isolation": 0.5,
+    "fault": true
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.19999999999999996,
+     "High": 0.8
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.6211043751695171,
+     "High": 0.3788956248304829
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 8.77999999993051e-06,
+     "High": 0.9999912200000001
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "High",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": true,
+     "firing_strength": 0.49687913749848256,
+     "consequent": 0.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": true,
+     "firing_strength": 0.3031138385015175,
+     "consequent": 0.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": true,
+     "firing_strength": 0.1242197843746206,
+     "consequent": 0.0
+    }
+   ],
+   "score": 0.0,
+   "plan": "REJECT"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 0.3
+ },
+ {
+  "slice": "mMTC",
+  "interval": 9,
+  "trace_index": 12009,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.0,
+   "timely_share": 1.022996971928963,
+   "requested_rate": 0.0020010829171636844,
+   "requested_latency": 0.8344323926390942,
+   "requested_reliability": 0.97752,
+   "granted_fraction": 0.02,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 154.945,
+   "reliability_floor": 0.97752,
+   "requested_rate_mbps": 0.649,
+   "isolation_level": 1.0
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.0,
+   "reliability_ratio": 1.022996971928963
+  },
+  "intention": "IMMEDIATE",
+  "plan_inference": {
+   "request": {
+    "load": 0.6,
+    "latency_requirement": 0.8344323926390942,
+    "reliability_requirement": 0.97752,
+    "isolation": 1.0,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.8,
+     "High": 0.19999999999999996
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.3311352147218116,
+     "High": 0.6688647852781884
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.04496000000000011,
+     "High": 0.9550399999999999
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 0.0,
+     "High": 1.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Medium",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.5110340996256648,
+     "consequent": 78.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.25299790037433517,
+     "consequent": 83.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.12775852490641618,
+     "consequent": 63.0
+    }
+   ],
+   "score": 76.20607607360907,
+   "plan": "IMMEDIATE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "eMBB",
+  "interval": 10,
+  "trace_index": 12010,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.03456963658247299,
+   "timely_share": 1.0030361905487912,
+   "requested_rate": 0.5345964023838626,
+   "requested_latency": 0.5929092805005214,
+   "requested_reliability": 0.996973,
+   "granted_fraction": 0.64,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 28.43,
+   "reliability_floor": 0.996973,
+   "requested_rate_mbps": 228.99,
+   "isolation_level": 0.0
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.035174111853675694,
+   "reliability_ratio": 1.0030361905487912
+  },
+  "intention": "OPTIMIZE",
+  "plan_inference": {
+   "request": {
+    "load": 0.2,
+    "latency_requirement": 0.5929092805005214,
+    "reliability_requirement": 0.996973,
+    "isolation": 0.0,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.6,
+     "Medium": 0.4,
+     "High": 0.0
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.8141814389989572,
+     "High": 0.18581856100104277
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.006054000000000004,
+     "High": 0.993946
+    },
+    "isolation": {
+     "Low": 1.0,
+     "Medium": 0.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Low",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.4855514307403545,
+     "consequent": 78.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.323700953826903,
+     "consequent": 63.0
+    },
+    {
+     "load": "Low",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.11081616925964548,
+     "consequent": 73.0
+    }
+   ],
+   "score": 71.01036719499479,
+   "plan": "OPTIMIZE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "uRLLC",
+  "interval": 10,
+  "trace_index": 12010,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.4494228430348851,
+   "timely_share": 1.0000069100477484,
+   "requested_rate": 0.18917983755324932,
+   "requested_latency": 0.4833999430851345,
+   "requested_reliability": 0.9999930899999999,
+   "granted_fraction": 0.19,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 1.762402471,
+   "reliability_floor": 0.9999930899999999,
+   "requested_rate_mbps": 67.4756643,
+   "isolation_level": 0.5
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.5674072843489562,
+   "reliability_ratio": 1.0000069100477484
+  },
+  "intention": "IMMEDIATE",
+  "plan_inference": {
+   "request": {
+    "load": 0.3,
+    "latency_requirement": 0.4833999430851345,
+    "reliability_requirement": 0.9999930899999999,
+    "isolation": 0.5,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.4,
+     "Medium": 0.6,
+     "High": 0.0
+    },
+    "latency_requirement": {
+     "Low": 0.03320011382973098,
+     "Medium": 0.966799886170269,
+     "High": 0.0
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 1.3820000000164256e-05,
+     "High": 0.9999861799999998
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.5800719149975052,
+     "consequent": 73.0
+    },
+    {
+     "load": "Low",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.38671460999833684,
+     "consequent": 88.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Low",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.01991979300249471,
+     "consequent": 78.0
+    }
+   ],
+   "score": 79.16586236914866,
+   "plan": "IMMEDIATE"
+  },
+  "policy_action": 1,
+  "effective_action": 1,
+  "step_prbs": 10,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "mMTC",
+  "interval": 10,
+  "trace_index": 12010,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.0,
+   "timely_share": 1.0386480956387167,
+   "requested_rate": 0.003913320617265177,
+   "requested_latency": 0.4444471969544794,
+   "requested_reliability": 0.9627899999999999,
+   "granted_fraction": 0.02,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 82.529,
+   "reliability_floor": 0.9627899999999999,
+   "requested_rate_mbps": 1.2704,
+   "isolation_level": 0.0
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.0,
+   "reliability_ratio": 1.0386480956387167
+  },
+  "intention": "OPTIMIZE",
+  "plan_inference": {
+   "request": {
+    "load": 0.6,
+    "latency_requirement": 0.4444471969544794,
+    "reliability_requirement": 0.9627899999999999,
+    "isolation": 0.0,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.8,
+     "High": 0.19999999999999996
+    },
+    "latency_requirement": {
+     "Low": 0.11110560609104125,
+     "Medium": 0.8888943939089587,
+     "High": 0.0
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.07442000000000015,
+     "High": 0.9255799999999998
+    },
+    "isolation": {
+     "Low": 1.0,
+     "Medium": 0.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.6581942984914032,
+     "consequent": 63.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.16454857462285075,
+     "consequent": 48.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Low",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.08226970150859676,
+     "consequent": 68.0
+    }
+   ],
+   "score": 59.8113280304552,
+   "plan": "OPTIMIZE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "eMBB",
+  "interval": 11,
+  "trace_index": 12011,
+  "beliefs": {
+   "backlog": 0.011928570865273802,
+   "oldest_age": 0.09113771199852425,
+   "served_delay": 0.11833044273160395,
+   "timely_share": 1.0025886839820417,
+   "requested_rate": 0.4520384332087266,
+   "requested_latency": 0.21856100104275286,
+   "requested_reliability": 0.997418,
+   "granted_fraction": 0.59,
+   "isolation": 1.0,
+   "fault": 1.0
+  },
+  "desires": {
+   "latency_bound_ms": 10.48,
+   "reliability_floor": 0.997418,
+   "requested_rate_mbps": 185.17,
+   "isolation_level": 0.5
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.12561600154604308,
+   "reliability_ratio": 1.0025886839820417
+  },
+  "intention": "REJECT",
+  "plan_inference": {
+   "request": {
+    "load": 0.9,
+    "latency_requirement": 0.21856100104275286,
+    "reliability_requirement": 0.997418,
+    "isolation": 0.5,
+    "fault": true
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.19999999999999996,
+     "High": 0.8
+    },
+    "latency_requirement": {
+     "Low": 0.5628779979144942,
+     "Medium": 0.4371220020855058,
+     "High": 0.0
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.005163999999999946,
+     "High": 0.994836
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "High",
+     "latency_requirement": "Low",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": true,
+     "firing_strength": 0.4479770367466111,
+     "consequent": 0.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": true,
+     "firing_strength": 0.347891763253389,
+     "consequent": 0.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Low",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": true,
+     "firing_strength": 0.11199425918665275,
+     "consequent": 0.0
+    }
+   ],
+   "score": 0.0,
+   "plan": "REJECT"
+  },
+  "policy_action": 0,
+  "effective_action": 0,
+  "step_prbs": 5,
+  "admitted_share": 0.3
+ },
+ {
+  "slice": "uRLLC",
+  "interval": 11,
+  "trace_index": 12011,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.39472300771544766,
+   "timely_share": 1.0000057400329478,
+   "requested_rate": 0.12124706141339266,
+   "requested_latency": 0.5667353361636106,
+   "requested_reliability": 0.99999426,
+   "granted_fraction": 0.29,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 2.066230605,
+   "reliability_floor": 0.99999426,
+   "requested_rate_mbps": 41.76482682,
+   "isolation_level": 0.5
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.48397308489194507,
+   "reliability_ratio": 1.0000057400329478
+  },
+  "intention": "IMMEDIATE",
+  "plan_inference": {
+   "request": {
+    "load": 0.3,
+    "latency_requirement": 0.5667353361636106,
+    "reliability_requirement": 0.99999426,
+    "isolation": 0.5,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.4,
+     "Medium": 0.6,
+     "High": 0.0
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.8665293276727788,
+     "High": 0.1334706723272212
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 1.147999999995264e-05,
+     "High": 0.99998852
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.5199116279496582,
+     "consequent": 73.0
+    },
+    {
+     "load": "Low",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.3466077519664389,
+     "consequent": 88.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.08008148405034174,
+     "consequent": 68.0
+    }
+   ],
+   "score": 78.33253183836388,
+   "plan": "IMMEDIATE"
+  },
+  "policy_action": 1,
+  "effective_action": 1,
+  "step_prbs": 10,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "mMTC",
+  "interval": 11,
+  "trace_index": 12011,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.0,
+   "timely_share": 1.0266835042761369,
+   "requested_rate": 0.0001280782173880241,
+   "requested_latency": 0.4079399383162502,
+   "requested_reliability": 0.9740099999999999,
+   "granted_fraction": 0.02,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 75.75,
+   "reliability_floor": 0.9740099999999999,
+   "requested_rate_mbps": 0.0415,
+   "isolation_level": 0.0
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.0,
+   "reliability_ratio": 1.0266835042761369
+  },
+  "intention": "OPTIMIZE",
+  "plan_inference": {
+   "request": {
+    "load": 0.6,
+    "latency_requirement": 0.4079399383162502,
+    "reliability_requirement": 0.9740099999999999,
+    "isolation": 0.0,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.8,
+     "High": 0.19999999999999996
+    },
+    "latency_requirement": {
+     "Low": 0.1841201233674996,
+     "Medium": 0.8158798766325004,
+     "High": 0.0
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.05198000000000014,
+     "High": 0.9480199999999999
+    },
+    "isolation": {
+     "Low": 1.0,
+     "Medium": 0.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.6187763525161143,
+     "consequent": 63.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.15469408812902855,
+     "consequent": 48.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Low",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.13963964748388558,
+     "consequent": 68.0
+    }
+   ],
+   "score": 60.400800616837486,
+   "plan": "OPTIMIZE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "eMBB",
+  "interval": 12,
+  "trace_index": 12012,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.0514653467770757,
+   "timely_share": 1.0064108370318932,
+   "requested_rate": 0.5364211709549545,
+   "requested_latency": 0.4533889468196037,
+   "requested_reliability": 0.99363,
+   "granted_fraction": 0.59,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 21.74,
+   "reliability_floor": 0.99363,
+   "requested_rate_mbps": 230.0,
+   "isolation_level": 0.0
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.052812702306722546,
+   "reliability_ratio": 1.0064108370318932
+  },
+  "intention": "OPTIMIZE",
+  "plan_inference": {
+   "request": {
+    "load": 0.9,
+    "latency_requirement": 0.4533889468196037,
+    "reliability_requirement": 0.99363,
+    "isolation": 0.0,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.19999999999999996,
+     "High": 0.8
+    },
+    "latency_requirement": {
+     "Low": 0.09322210636079264,
+     "Medium": 0.9067778936392074,
+     "High": 0.0
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.012739999999999974,
+     "High": 0.98726
+    },
+    "isolation": {
+     "Low": 1.0,
+     "Medium": 0.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "High",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.7161804346193951,
+     "consequent": 48.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.17904510865484874,
+     "consequent": 63.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "Low",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.07362756538060493,
+     "consequent": 53.0
+    }
+   ],
+   "score": 51.338710531803954,
+   "plan": "OPTIMIZE"
+  },
+  "policy_action": 1,
+  "effective_action": 1,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "uRLLC",
+  "interval": 12,
+  "trace_index": 12012,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.532871036395244,
+   "timely_share": 1.0000071800515529,
+   "requested_rate": 0.04323858749480107,
+   "requested_latency": 0.38971017120606477,
+   "requested_reliability": 0.9999928199999999,
+   "granted_fraction": 0.39,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 1.420823851,
+   "reliability_floor": 0.9999928199999999,
+   "requested_rate_mbps": 14.31658641,
+   "isolation_level": 0.5
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.7038170138375585,
+   "reliability_ratio": 1.0000071800515529
+  },
+  "intention": "IMMEDIATE",
+  "plan_inference": {
+   "request": {
+    "load": 0.3,
+    "latency_requirement": 0.38971017120606477,
+    "reliability_requirement": 0.9999928199999999,
+    "isolation": 0.5,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.4,
+     "Medium": 0.6,
+     "High": 0.0
+    },
+    "latency_requirement": {
+     "Low": 0.22057965758787046,
+     "Medium": 0.7794203424121295,
+     "High": 0.0
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 1.4360000000213091e-05,
+     "High": 0.9999856399999998
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.4676454899616074,
+     "consequent": 73.0
+    },
+    {
+     "load": "Low",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.31176365997440497,
+     "consequent": 88.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Low",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.13234589403839248,
+     "consequent": 78.0
+    }
+   ],
+   "score": 80.10275468793935,
+   "plan": "IMMEDIATE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "mMTC",
+  "interval": 12,
+  "trace_index": 12012,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.0,
+   "timely_share": 1.0271897116678481,
+   "requested_rate": 0.00025768284630618265,
+   "requested_latency": 0.3759132873173493,
+   "requested_reliability": 0.9735299999999999,
+   "granted_fraction": 0.02,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 69.803,
+   "reliability_floor": 0.9735299999999999,
+   "requested_rate_mbps": 0.0835,
+   "isolation_level": 0.0
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.0,
+   "reliability_ratio": 1.0271897116678481
+  },
+  "intention": "OPTIMIZE",
+  "plan_inference": {
+   "request": {
+    "load": 0.8,
+    "latency_requirement": 0.3759132873173493,
+    "reliability_requirement": 0.9735299999999999,
+    "isolation": 0.0,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.3999999999999999,
+     "High": 0.6000000000000001
+    },
+    "latency_requirement": {
+     "Low": 0.2481734253653014,
+     "Medium": 0.7518265746346986,
+     "High": 0.0
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.05294000000000021,
+     "High": 0.9470599999999998
+    },
+    "isolation": {
+     "Low": 1.0,
+     "Medium": 0.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "High",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.42721492546412254,
+     "consequent": 48.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.28480995030941497,
+     "consequent": 63.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "Low",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.14102107453587742,
+     "consequent": 53.0
+    }
+   ],
+   "score": 54.711467126826506,
+   "plan": "OPTIMIZE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "eMBB",
+  "interval": 13,
+  "trace_index": 12013,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.0396009294476462,
+   "timely_share": 1.0080126928958288,
+   "requested_rate": 0.3624759865422094,
+   "requested_latency": 0.5349322210636078,
+   "requested_reliability": 0.992051,
+   "granted_fraction": 0.64,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 25.65,
+   "reliability_floor": 0.992051,
+   "requested_rate_mbps": 141.55,
+   "isolation_level": 1.0
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.04039550012917166,
+   "reliability_ratio": 1.0080126928958288
+  },
+  "intention": "OPTIMIZE",
+  "plan_inference": {
+   "request": {
+    "load": 0.9,
+    "latency_requirement": 0.5349322210636078,
+    "reliability_requirement": 0.992051,
+    "isolation": 1.0,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.19999999999999996,
+     "High": 0.8
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.9301355578727843,
+     "High": 0.06986444212721565
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.015897999999999968,
+     "High": 0.984102
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 0.0,
+     "High": 1.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "High",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.7322786102189783,
+     "consequent": 68.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.18306965255474456,
+     "consequent": 83.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.05500298978102175,
+     "consequent": 63.0
+    }
+   ],
+   "score": 70.49169778936393,
+   "plan": "OPTIMIZE"
+  },
+  "policy_action": 1,
+  "effective_action": 1,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "uRLLC",
+  "interval": 13,
+  "trace_index": 12013,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.3349094282106557,
+   "timely_share": 1.00000430001849,
+   "requested_rate": 0.09815403115685249,
+   "requested_latency": 0.6894800150787372,
+   "requested_reliability": 0.9999957,
+   "granted_fraction": 0.34,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 2.513738985,
+   "reliability_floor": 0.9999957,
+   "requested_rate_mbps": 33.41499118,
+   "isolation_level": 0.5
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.39781377699403425,
+   "reliability_ratio": 1.00000430001849
+  },
+  "intention": "IMMEDIATE",
+  "plan_inference": {
+   "request": {
+    "load": 0.3,
+    "latency_requirement": 0.6894800150787372,
+    "reliability_requirement": 0.9999957,
+    "isolation": 0.5,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.4,
+     "Medium": 0.6,
+     "High": 0.0
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.6210399698425255,
+     "High": 0.3789600301574745
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 8.599999999914232e-06,
+     "High": 0.9999914000000001
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.37262077733927096,
+     "consequent": 73.0
+    },
+    {
+     "load": "Low",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.24841385155951398,
+     "consequent": 88.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.2273740626607291,
+     "consequent": 68.0
+    }
+   ],
+   "score": 77.10511384921264,
+   "plan": "IMMEDIATE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "mMTC",
+  "interval": 13,
+  "trace_index": 12013,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.0,
+   "timely_share": 1.0340406171154404,
+   "requested_rate": 8.42557096472642e-05,
+   "requested_latency": 0.5250712077337873,
+   "requested_reliability": 0.9670799999999999,
+   "granted_fraction": 0.02,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 97.5,
+   "reliability_floor": 0.9670799999999999,
+   "requested_rate_mbps": 0.0273,
+   "isolation_level": 1.0
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.0,
+   "reliability_ratio": 1.0340406171154404
+  },
+  "intention": "IMMEDIATE",
+  "plan_inference": {
+   "request": {
+    "load": 0.3,
+    "latency_requirement": 0.5250712077337873,
+    "reliability_requirement": 0.9670799999999999,
+    "isolation": 1.0,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.4,
+     "Medium": 0.6,
+     "High": 0.0
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.9498575845324253,
+     "High": 0.0501424154675747
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.06584000000000012,
+     "High": 0.9341599999999999
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 0.0,
+     "High": 1.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.5323913767000862,
+     "consequent": 83.0
+    },
+    {
+     "load": "Low",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.3549275844667241,
+     "consequent": 98.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "Medium",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.037523174019369,
+     "consequent": 73.0
+    }
+   ],
+   "score": 88.09088792266212,
+   "plan": "IMMEDIATE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "eMBB",
+  "interval": 14,
+  "trace_index": 12014,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.03214677327020522,
+   "timely_share": 1.0044103659167403,
+   "requested_rate": 0.657408053965399,
+   "requested_latency": 0.6383733055265901,
+   "requested_reliability": 0.9956090000000001,
+   "granted_fraction": 0.69,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 30.61,
+   "reliability_floor": 0.9956090000000001,
+   "requested_rate_mbps": 301.25,
+   "isolation_level": 1.0
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.032669062397909183,
+   "reliability_ratio": 1.0044103659167403
+  },
+  "intention": "OPTIMIZE",
+  "plan_inference": {
+   "request": {
+    "load": 0.8,
+    "latency_requirement": 0.6383733055265901,
+    "reliability_requirement": 0.9956090000000001,
+    "isolation": 1.0,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.3999999999999999,
+     "High": 0.6000000000000001
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.7232533889468198,
+     "High": 0.2767466110531802
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.008781999999999845,
+     "High": 0.9912180000000002
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 0.0,
+     "High": 1.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "High",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.43014106661105345,
+     "consequent": 68.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.2867607110740355,
+     "consequent": 83.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.16458973338894675,
+     "consequent": 63.0
+    }
+   ],
+   "score": 72.5284469447341,
+   "plan": "OPTIMIZE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "uRLLC",
+  "interval": 14,
+  "trace_index": 12014,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.33898739442915127,
+   "timely_share": 1.0000075900576086,
+   "requested_rate": 0.1306086740666408,
+   "requested_latency": 0.6797204762992054,
+   "requested_reliability": 0.9999924099999999,
+   "granted_fraction": 0.29,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 2.478157195,
+   "reliability_floor": 0.9999924099999999,
+   "requested_rate_mbps": 45.20505336,
+   "isolation_level": 0.5
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.4035256528591601,
+   "reliability_ratio": 1.0000075900576086
+  },
+  "intention": "IMMEDIATE",
+  "plan_inference": {
+   "request": {
+    "load": 0.3,
+    "latency_requirement": 0.6797204762992054,
+    "reliability_requirement": 0.9999924099999999,
+    "isolation": 0.5,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.4,
+     "Medium": 0.6,
+     "High": 0.0
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.6405590474015892,
+     "High": 0.3594409525984108
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 1.5180000000114546e-05,
+     "High": 0.9999848199999999
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.38432959422914975,
+     "consequent": 73.0
+    },
+    {
+     "load": "Low",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.25621972948609983,
+     "consequent": 88.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.2156612977708502,
+     "consequent": 68.0
+    }
+   ],
+   "score": 77.20264343700795,
+   "plan": "IMMEDIATE"
+  },
+  "policy_action": 1,
+  "effective_action": 1,
+  "step_prbs": 10,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "mMTC",
+  "interval": 14,
+  "trace_index": 12014,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.0,
+   "timely_share": 1.0513809889289583,
+   "requested_rate": 3.086372124131976e-05,
+   "requested_latency": 0.7886084859046656,
+   "requested_reliability": 0.95113,
+   "granted_fraction": 0.02,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 146.436,
+   "reliability_floor": 0.95113,
+   "requested_rate_mbps": 0.01,
+   "isolation_level": 1.0
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.0,
+   "reliability_ratio": 1.0513809889289583
+  },
+  "intention": "IMMEDIATE",
+  "plan_inference": {
+   "request": {
+    "load": 0.3,
+    "latency_requirement": 0.7886084859046656,
+    "reliability_requirement": 0.95113,
+    "isolation": 1.0,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.4,
+     "Medium": 0.6,
+     "High": 0.0
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.4227830281906688,
+     "High": 0.5772169718093312
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.09773999999999994,
+     "High": 0.9022600000000001
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 0.0,
+     "High": 1.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Medium",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.3124798709908123,
+     "consequent": 78.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.22887612900918772,
+     "consequent": 83.0
+    },
+    {
+     "load": "Low",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.20831991399387487,
+     "consequent": 93.0
+    }
+   ],
+   "score": 85.13651514095335,
+   "plan": "IMMEDIATE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "eMBB",
+  "interval": 15,
+  "trace_index": 12015,
+  "beliefs": {
+   "backlog": 0.011928570865273802,
+   "oldest_age": 0.024511031014349774,
+   "served_delay": 0.03062221207102605,
+   "timely_share": 1.0049029213532827,
+   "requested_rate": 0.5798505935032199,
+   "requested_latency": 0.8404588112617308,
+   "requested_reliability": 0.995121,
+   "granted_fraction": 0.59,
+   "isolation": 0.927536231884058,
+   "fault": 1.0
+  },
+  "desires": {
+   "latency_bound_ms": 40.3,
+   "reliability_floor": 0.995121,
+   "requested_rate_mbps": 254.59,
+   "isolation_level": 0.0
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.031095894713697902,
+   "reliability_ratio": 1.0049029213532827
+  },
+  "intention": "REJECT",
+  "plan_inference": {
+   "request": {
+    "load": 0.9,
+    "latency_requirement": 0.8404588112617308,
+    "reliability_requirement": 0.995121,
+    "isolation": 0.0,
+    "fault": true
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.19999999999999996,
+     "High": 0.8
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.31908237747653834,
+     "High": 0.6809176225234617
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.009757999999999933,
+     "High": 0.9902420000000001
+    },
+    "isolation": {
+     "Low": 1.0,
+     "Medium": 0.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "High",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": true,
+     "firing_strength": 0.5394185826903023,
+     "consequent": 0.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": true,
+     "firing_strength": 0.2527750173096978,
+     "consequent": 0.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": true,
+     "firing_strength": 0.13485464567257555,
+     "consequent": 0.0
+    }
+   ],
+   "score": 0.0,
+   "plan": "REJECT"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 0.3
+ },
+ {
+  "slice": "uRLLC",
+  "interval": 15,
+  "trace_index": 12015,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.5138241380314502,
+   "timely_share": 1.0000072200521288,
+   "requested_rate": 0.12744803577143146,
+   "requested_latency": 0.40836118722240566,
+   "requested_reliability": 0.99999278,
+   "granted_fraction": 0.39,
+   "isolation": 1.0,
+   "fault": 1.0
+  },
+  "desires": {
+   "latency_bound_ms": 1.488822611,
+   "reliability_floor": 0.99999278,
+   "requested_rate_mbps": 44.0399719,
+   "isolation_level": 0.5
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.6716716905100791,
+   "reliability_ratio": 1.0000072200521288
+  },
+  "intention": "REJECT",
+  "plan_inference": {
+   "request": {
+    "load": 0.9,
+    "latency_requirement": 0.40836118722240566,
+    "reliability_requirement": 0.99999278,
+    "isolation": 0.5,
+    "fault": true
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.19999999999999996,
+     "High": 0.8
+    },
+    "latency_requirement": {
+     "Low": 0.18327762555518867,
+     "Medium": 0.8167223744448113,
+     "High": 0.0
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 1.4439999999948938e-05,
+     "High": 0.99998556
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "High",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": true,
+     "firing_strength": 0.6533684647789796,
+     "consequent": 0.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": true,
+     "firing_strength": 0.16334211619474484,
+     "consequent": 0.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "Low",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": true,
+     "firing_strength": 0.14661998322102054,
+     "consequent": 0.0
+    }
+   ],
+   "score": 0.0,
+   "plan": "REJECT"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 0.3
+ },
+ {
+  "slice": "mMTC",
+  "interval": 15,
+  "trace_index": 12015,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.0,
+   "timely_share": 1.0465067604336724,
+   "requested_rate": 0.00017745339001828752,
+   "requested_latency": 0.40393862644603273,
+   "requested_reliability": 0.95556,
+   "granted_fraction": 0.02,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 75.007,
+   "reliability_floor": 0.95556,
+   "requested_rate_mbps": 0.0575,
+   "isolation_level": 0.0
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.0,
+   "reliability_ratio": 1.0465067604336724
+  },
+  "intention": "DEFER",
+  "plan_inference": {
+   "request": {
+    "load": 0.95,
+    "latency_requirement": 0.40393862644603273,
+    "reliability_requirement": 0.95556,
+    "isolation": 0.0,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.10000000000000009,
+     "High": 0.8999999999999999
+    },
+    "latency_requirement": {
+     "Low": 0.19212274710793453,
+     "Medium": 0.8078772528920655,
+     "High": 0.0
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.08888000000000007,
+     "High": 0.9111199999999999
+    },
+    "isolation": {
+     "Low": 1.0,
+     "Medium": 0.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "High",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.6624658103895167,
+     "consequent": 48.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "Low",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.15754218961048314,
+     "consequent": 53.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.07360731226550193,
+     "consequent": 63.0
+    }
+   ],
+   "score": 49.57181373553967,
+   "plan": "DEFER"
+  },
+  "policy_action": 1,
+  "effective_action": 0,
+  "step_prbs": 5,
+  "admitted_share": 0.3
+ },
+ {
+  "slice": "eMBB",
+  "interval": 16,
+  "trace_index": 12016,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.03013978374536608,
+   "timely_share": 1.0067624231966117,
+   "requested_rate": 0.8354822990091331,
+   "requested_latency": 0.7789363920750781,
+   "requested_reliability": 0.993283,
+   "granted_fraction": 0.54,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 37.35,
+   "reliability_floor": 0.993283,
+   "requested_rate_mbps": 423.12,
+   "isolation_level": 0.5
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.030598584815452284,
+   "reliability_ratio": 1.0067624231966117
+  },
+  "intention": "IMMEDIATE",
+  "plan_inference": {
+   "request": {
+    "load": 0.2,
+    "latency_requirement": 0.7789363920750781,
+    "reliability_requirement": 0.993283,
+    "isolation": 0.5,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.6,
+     "Medium": 0.4,
+     "High": 0.0
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.4421272158498437,
+     "High": 0.5578727841501563
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.013433999999999946,
+     "High": 0.986566
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Low",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.33022699270072986,
+     "consequent": 83.0
+    },
+    {
+     "load": "Low",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.26171260729927015,
+     "consequent": 88.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.22015132846715324,
+     "consequent": 68.0
+    }
+   ],
+   "score": 79.07629607924922,
+   "plan": "IMMEDIATE"
+  },
+  "policy_action": 1,
+  "effective_action": 1,
+  "step_prbs": 10,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "uRLLC",
+  "interval": 16,
+  "trace_index": 12016,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.43367435043671754,
+   "timely_share": 1.0000068200465126,
+   "requested_rate": 0.06364017156184118,
+   "requested_latency": 0.5052061075325499,
+   "requested_reliability": 0.99999318,
+   "granted_fraction": 0.34,
+   "isolation": 1.0,
+   "fault": 1.0
+  },
+  "desires": {
+   "latency_bound_ms": 1.841904421,
+   "reliability_floor": 0.99999318,
+   "requested_rate_mbps": 21.2896698,
+   "isolation_level": 0.5
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.542916336265203,
+   "reliability_ratio": 1.0000068200465126
+  },
+  "intention": "REJECT",
+  "plan_inference": {
+   "request": {
+    "load": 0.9,
+    "latency_requirement": 0.5052061075325499,
+    "reliability_requirement": 0.99999318,
+    "isolation": 0.5,
+    "fault": true
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.19999999999999996,
+     "High": 0.8
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.9895877849349002,
+     "High": 0.010412215065099817
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 1.3639999999925934e-05,
+     "High": 0.9999863600000001
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "High",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": true,
+     "firing_strength": 0.791659429566011,
+     "consequent": 0.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": true,
+     "firing_strength": 0.1979148573915027,
+     "consequent": 0.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": true,
+     "firing_strength": 0.008329658433989064,
+     "consequent": 0.0
+    }
+   ],
+   "score": 0.0,
+   "plan": "REJECT"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 0.3
+ },
+ {
+  "slice": "mMTC",
+  "interval": 16,
+  "trace_index": 12016,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.0,
+   "timely_share": 1.0286584236838316,
+   "requested_rate": 0.0002592256573851093,
+   "requested_latency": 0.7990560566021379,
+   "requested_reliability": 0.97214,
+   "granted_fraction": 0.02,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 148.376,
+   "reliability_floor": 0.97214,
+   "requested_rate_mbps": 0.084,
+   "isolation_level": 0.5
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.0,
+   "reliability_ratio": 1.0286584236838316
+  },
+  "intention": "OPTIMIZE",
+  "plan_inference": {
+   "request": {
+    "load": 0.3,
+    "latency_requirement": 0.7990560566021379,
+    "reliability_requirement": 0.97214,
+    "isolation": 0.5,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.4,
+     "Medium": 0.6,
+     "High": 0.0
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.4018878867957243,
+     "High": 0.5981121132042757
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.05571999999999999,
+     "High": 0.94428
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Medium",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.33887118375392006,
+     "consequent": 68.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.22769681624607993,
+     "consequent": 73.0
+    },
+    {
+     "load": "Low",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.22591412250261342,
+     "consequent": 83.0
+    }
+   ],
+   "score": 75.45223943397862,
+   "plan": "OPTIMIZE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "eMBB",
+  "interval": 17,
+  "trace_index": 12017,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.043345477168831914,
+   "timely_share": 1.0024600369306278,
+   "requested_rate": 1.0219178786494123,
+   "requested_latency": 0.4877997914494265,
+   "requested_reliability": 0.9975459999999999,
+   "granted_fraction": 0.64,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 23.39,
+   "reliability_floor": 0.9975459999999999,
+   "requested_rate_mbps": 576.24,
+   "isolation_level": 1.0
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.04429861386546614,
+   "reliability_ratio": 1.0024600369306278
+  },
+  "intention": "IMMEDIATE",
+  "plan_inference": {
+   "request": {
+    "load": 0.2,
+    "latency_requirement": 0.4877997914494265,
+    "reliability_requirement": 0.9975459999999999,
+    "isolation": 1.0,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.6,
+     "Medium": 0.4,
+     "High": 0.0
+    },
+    "latency_requirement": {
+     "Low": 0.024400417101147043,
+     "Medium": 0.975599582898853,
+     "High": 0.0
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.0049080000000001345,
+     "High": 0.9950919999999999
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 0.0,
+     "High": 1.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Low",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.5824868040875911,
+     "consequent": 98.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.3883245360583941,
+     "consequent": 83.0
+    },
+    {
+     "load": "Low",
+     "latency_requirement": "Low",
+     "reliability_requirement": "High",
+     "isolation": "High",
+     "fault": false,
+     "firing_strength": 0.014568395912408764,
+     "consequent": 100.0
+    }
+   ],
+   "score": 92.0292168977685,
+   "plan": "IMMEDIATE"
+  },
+  "policy_action": 1,
+  "effective_action": 1,
+  "step_prbs": 10,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "uRLLC",
+  "interval": 17,
+  "trace_index": 12017,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.4433522903994471,
+   "timely_share": 1.0000033400111557,
+   "requested_rate": 0.0694446805828035,
+   "requested_latency": 0.4916190830933106,
+   "requested_reliability": 0.9999966600000001,
+   "granted_fraction": 0.29,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 1.792368202,
+   "reliability_floor": 0.9999966600000001,
+   "requested_rate_mbps": 23.29973488,
+   "isolation_level": 0.5
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.5579210783164742,
+   "reliability_ratio": 1.0000033400111557
+  },
+  "intention": "OPTIMIZE",
+  "plan_inference": {
+   "request": {
+    "load": 0.9,
+    "latency_requirement": 0.4916190830933106,
+    "reliability_requirement": 0.9999966600000001,
+    "isolation": 0.5,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.19999999999999996,
+     "High": 0.8
+    },
+    "latency_requirement": {
+     "Low": 0.016761833813378813,
+     "Medium": 0.9832381661866212,
+     "High": 0.0
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 6.679999999814612e-06,
+     "High": 0.9999933200000002
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "High",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.7865852785245371,
+     "consequent": 58.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.19664631963113421,
+     "consequent": 73.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "Low",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.013409377475463155,
+     "consequent": 63.0
+    }
+   ],
+   "score": 61.0837423690669,
+   "plan": "OPTIMIZE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "mMTC",
+  "interval": 17,
+  "trace_index": 12017,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.0,
+   "timely_share": 1.024149443886852,
+   "requested_rate": 0.0001197459165912999,
+   "requested_latency": 0.6967991120641978,
+   "requested_reliability": 0.97642,
+   "granted_fraction": 0.02,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 129.388,
+   "reliability_floor": 0.97642,
+   "requested_rate_mbps": 0.0388,
+   "isolation_level": 0.5
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.0,
+   "reliability_ratio": 1.024149443886852
+  },
+  "intention": "OPTIMIZE",
+  "plan_inference": {
+   "request": {
+    "load": 0.8,
+    "latency_requirement": 0.6967991120641978,
+    "reliability_requirement": 0.97642,
+    "isolation": 0.5,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.3999999999999999,
+     "High": 0.6000000000000001
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.6064017758716045,
+     "High": 0.3935982241283955
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.04716000000000009,
+     "High": 0.9528399999999999
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "High",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.3466823208728998,
+     "consequent": 58.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.23112154724859976,
+     "consequent": 73.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.22502167912710025,
+     "consequent": 53.0
+    }
+   ],
+   "score": 61.560408879358015,
+   "plan": "OPTIMIZE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "eMBB",
+  "interval": 18,
+  "trace_index": 12018,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.040360603087359156,
+   "timely_share": 1.0072816389681003,
+   "requested_rate": 0.31710602201966676,
+   "requested_latency": 0.5063607924921794,
+   "requested_reliability": 0.9927710000000001,
+   "granted_fraction": 0.74,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 24.28,
+   "reliability_floor": 0.9927710000000001,
+   "requested_rate_mbps": 120.9,
+   "isolation_level": 0.0
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.04118616144975288,
+   "reliability_ratio": 1.0072816389681003
+  },
+  "intention": "OPTIMIZE",
+  "plan_inference": {
+   "request": {
+    "load": 0.5,
+    "latency_requirement": 0.5063607924921794,
+    "reliability_requirement": 0.9927710000000001,
+    "isolation": 0.0,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.9872784150156413,
+     "High": 0.012721584984358714
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.01445799999999986,
+     "High": 0.9855420000000001
+    },
+    "isolation": {
+     "Low": 1.0,
+     "Medium": 0.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.9730043436913453,
+     "consequent": 63.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "Medium",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.014274071324296003,
+     "consequent": 53.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.012537656308654856,
+     "consequent": 58.0
+    }
+   ],
+   "score": 62.791812075078205,
+   "plan": "OPTIMIZE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "uRLLC",
+  "interval": 18,
+  "trace_index": 12018,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.44047061803995174,
+   "timely_share": 1.0000044900201601,
+   "requested_rate": 0.11999204905046308,
+   "requested_latency": 0.4956012927234966,
+   "requested_reliability": 0.99999551,
+   "granted_fraction": 0.24,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 1.806886731,
+   "reliability_floor": 0.99999551,
+   "requested_rate_mbps": 41.30607537,
+   "isolation_level": 0.5
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.5534381225139452,
+   "reliability_ratio": 1.0000044900201601
+  },
+  "intention": "IMMEDIATE",
+  "plan_inference": {
+   "request": {
+    "load": 0.3,
+    "latency_requirement": 0.4956012927234966,
+    "reliability_requirement": 0.99999551,
+    "isolation": 0.5,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.4,
+     "Medium": 0.6,
+     "High": 0.0
+    },
+    "latency_requirement": {
+     "Low": 0.008797414553006755,
+     "Medium": 0.9912025854469932,
+     "High": 0.0
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 8.980000000047283e-06,
+     "High": 0.99999102
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.5947162106686655,
+     "consequent": 73.0
+    },
+    {
+     "load": "Low",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.39647747377911036,
+     "consequent": 88.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Low",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.005278401331334441,
+     "consequent": 78.0
+    }
+   ],
+   "score": 79.04389727276504,
+   "plan": "IMMEDIATE"
+  },
+  "policy_action": 1,
+  "effective_action": 1,
+  "step_prbs": 10,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "mMTC",
+  "interval": 18,
+  "trace_index": 12018,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.0,
+   "timely_share": 1.01161332092421,
+   "requested_rate": 0.00016572700726161382,
+   "requested_latency": 0.810047547217365,
+   "requested_reliability": 0.9885200000000001,
+   "granted_fraction": 0.02,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 150.417,
+   "reliability_floor": 0.9885200000000001,
+   "requested_rate_mbps": 0.0537,
+   "isolation_level": 0.5
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.0,
+   "reliability_ratio": 1.01161332092421
+  },
+  "intention": "OPTIMIZE",
+  "plan_inference": {
+   "request": {
+    "load": 0.8,
+    "latency_requirement": 0.810047547217365,
+    "reliability_requirement": 0.9885200000000001,
+    "isolation": 0.5,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.3999999999999999,
+     "High": 0.6000000000000001
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.3799049055652699,
+     "High": 0.6200950944347301
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.02295999999999987,
+     "High": 0.9770400000000001
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "High",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.3635146266399053,
+     "consequent": 53.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.24234308442660346,
+     "consequent": 68.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.22270937336009486,
+     "consequent": 58.0
+    }
+   ],
+   "score": 60.669924527826346,
+   "plan": "OPTIMIZE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "eMBB",
+  "interval": 19,
+  "trace_index": 12019,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.039452848411800405,
+   "timely_share": 1.0053130796258225,
+   "requested_rate": 0.6106374404934003,
+   "requested_latency": 0.5182481751824818,
+   "requested_reliability": 0.994715,
+   "granted_fraction": 0.69,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 24.85,
+   "reliability_floor": 0.994715,
+   "requested_rate_mbps": 272.68,
+   "isolation_level": 0.5
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.04024144869215292,
+   "reliability_ratio": 1.0053130796258225
+  },
+  "intention": "IMMEDIATE",
+  "plan_inference": {
+   "request": {
+    "load": 0.2,
+    "latency_requirement": 0.5182481751824818,
+    "reliability_requirement": 0.994715,
+    "isolation": 0.5,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.6,
+     "Medium": 0.4,
+     "High": 0.0
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.9635036496350364,
+     "High": 0.03649635036496357
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.010569999999999968,
+     "High": 0.98943
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Low",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.5719916496350365,
+     "consequent": 88.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.38132776642335764,
+     "consequent": 73.0
+    },
+    {
+     "load": "Low",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.021666350364963543,
+     "consequent": 83.0
+    }
+   ],
+   "score": 81.71181824817519,
+   "plan": "IMMEDIATE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "uRLLC",
+  "interval": 19,
+  "trace_index": 12019,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.3367223360166645,
+   "timely_share": 1.0000098200964334,
+   "requested_rate": 0.1067524643642475,
+   "requested_latency": 0.6851118362048039,
+   "requested_reliability": 0.9999901800000001,
+   "granted_fraction": 0.29,
+   "isolation": 0.7916666666666666,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 2.497813271,
+   "reliability_floor": 0.9999901800000001,
+   "requested_rate_mbps": 36.50145045,
+   "isolation_level": 0.5
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.4003501829420779,
+   "reliability_ratio": 1.0000098200964334
+  },
+  "intention": "OPTIMIZE",
+  "plan_inference": {
+   "request": {
+    "load": 0.6,
+    "latency_requirement": 0.6851118362048039,
+    "reliability_requirement": 0.9999901800000001,
+    "isolation": 0.5,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.8,
+     "High": 0.19999999999999996
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.6297763275903923,
+     "High": 0.37022367240960774
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 1.9639999999876423e-05,
+     "High": 0.9999803600000001
+    },
+    "isolation": {
+     "Low": 0.0,
+     "Medium": 1.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.5038111670266547,
+     "consequent": 73.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.2961731209733453,
+     "consequent": 68.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Medium",
+     "fault": false,
+     "firing_strength": 0.12595279175666366,
+     "consequent": 58.0
+    }
+   ],
+   "score": 68.14868523795197,
+   "plan": "OPTIMIZE"
+  },
+  "policy_action": 2,
+  "effective_action": 2,
+  "step_prbs": 5,
+  "admitted_share": 1.0
+ },
+ {
+  "slice": "mMTC",
+  "interval": 19,
+  "trace_index": 12019,
+  "beliefs": {
+   "backlog": 0.0,
+   "oldest_age": 0.0,
+   "served_delay": 0.0,
+   "timely_share": 1.0310766502381787,
+   "requested_rate": 0.00014751998258982096,
+   "requested_latency": 0.6762486327953554,
+   "requested_reliability": 0.96986,
+   "granted_fraction": 0.02,
+   "isolation": 1.0,
+   "fault": 0.0
+  },
+  "desires": {
+   "latency_bound_ms": 125.572,
+   "reliability_floor": 0.96986,
+   "requested_rate_mbps": 0.0478,
+   "isolation_level": 0.0
+  },
+  "belief_desire_gap": {
+   "latency_ratio": 0.0,
+   "reliability_ratio": 1.0310766502381787
+  },
+  "intention": "DEFER",
+  "plan_inference": {
+   "request": {
+    "load": 0.95,
+    "latency_requirement": 0.6762486327953554,
+    "reliability_requirement": 0.96986,
+    "isolation": 0.0,
+    "fault": false
+   },
+   "memberships": {
+    "load": {
+     "Low": 0.0,
+     "Medium": 0.10000000000000009,
+     "High": 0.8999999999999999
+    },
+    "latency_requirement": {
+     "Low": 0.0,
+     "Medium": 0.6475027344092892,
+     "High": 0.3524972655907108
+    },
+    "reliability_requirement": {
+     "Low": 0.0,
+     "Medium": 0.06027999999999989,
+     "High": 0.9397200000000001
+    },
+    "isolation": {
+     "Low": 1.0,
+     "Medium": 0.0,
+     "High": 0.0
+    }
+   },
+   "strongest_rules": [
+    {
+     "load": "High",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.5476241426211875,
+     "consequent": 48.0
+    },
+    {
+     "load": "High",
+     "latency_requirement": "High",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.29812385737881253,
+     "consequent": 43.0
+    },
+    {
+     "load": "Medium",
+     "latency_requirement": "Medium",
+     "reliability_requirement": "High",
+     "isolation": "Low",
+     "fault": false,
+     "firing_strength": 0.06084712695790978,
+     "consequent": 63.0
+    }
+   ],
+   "score": 47.13471367204645,
+   "plan": "DEFER"
+  },
+  "policy_action": 1,
+  "effective_action": 0,
+  "step_prbs": 5,
+  "admitted_share": 0.3
+ }
+]

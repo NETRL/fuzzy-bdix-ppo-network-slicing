@@ -1,0 +1,230 @@
+[
+ {
+  "method": "D-PPO",
+  "seed": 0,
+  "steps": 200000,
+  "trained_through": "BDIx agents (code/bdix/training.py)",
+  "train_seconds": 497.1506097316742,
+  "rollouts": 97,
+  "parameter_sha256": "4b38565e5b7ea0c4304c0c0d293eecf1c7c8adfa21d67690cb7e5ab3b3ad5b0a",
+  "final_reward_weighted": 0.9363602142268003,
+  "numpy_version": "2.3.5",
+  "compared_checkpoint": "code/campaign/results_fixed4/agents/D-PPO_seed0.pkl",
+  "compared_checkpoint_parameter_sha256": "4b38565e5b7ea0c4304c0c0d293eecf1c7c8adfa21d67690cb7e5ab3b3ad5b0a",
+  "parameters_identical_to_checkpoint": true,
+  "evaluation": {
+   "eMBB": {
+    "latency": 1.110230740662813,
+    "sla_viol": 0.0,
+    "throughput": 151.85592000000003,
+    "isolation": 0.9875085656396978,
+    "reward": 0.9784867909266582
+   },
+   "uRLLC": {
+    "latency": 1.008537386542725,
+    "sla_viol": 0.36367622944773387,
+    "throughput": 33.76008,
+    "isolation": 0.9737034464818374,
+    "reward": 0.9679402329030715
+   },
+   "mMTC": {
+    "latency": 4.0,
+    "sla_viol": 0.0,
+    "throughput": 0.0675,
+    "isolation": 0.9997692039542582,
+    "reward": 0.8199493506493406
+   },
+   "msgs_per_s": 504.8050000000001
+  }
+ },
+ {
+  "method": "D-PPO",
+  "seed": 1,
+  "steps": 200000,
+  "trained_through": "BDIx agents (code/bdix/training.py)",
+  "train_seconds": 469.05521178245544,
+  "rollouts": 97,
+  "parameter_sha256": "370b26b50368a5eabe7617c839c8d8ad549883cf5823e3647048fe9a9ad7724e",
+  "final_reward_weighted": 0.9359737503311377,
+  "numpy_version": "2.3.5",
+  "compared_checkpoint": "code/campaign/results_fixed4/agents/D-PPO_seed1.pkl",
+  "compared_checkpoint_parameter_sha256": "370b26b50368a5eabe7617c839c8d8ad549883cf5823e3647048fe9a9ad7724e",
+  "parameters_identical_to_checkpoint": true,
+  "evaluation": {
+   "eMBB": {
+    "latency": 1.21399165658073,
+    "sla_viol": 0.0,
+    "throughput": 151.85340000000002,
+    "isolation": 0.9953287589951646,
+    "reward": 0.9791664101557463
+   },
+   "uRLLC": {
+    "latency": 1.0012976379303944,
+    "sla_viol": 0.03471160968767116,
+    "throughput": 33.76008,
+    "isolation": 0.9867057767363174,
+    "reward": 0.972610386624815
+   },
+   "mMTC": {
+    "latency": 4.0,
+    "sla_viol": 0.0,
+    "throughput": 0.0675,
+    "isolation": 0.9994211759556867,
+    "reward": 0.819887544701665
+   },
+   "msgs_per_s": 485.3974999999999
+  }
+ },
+ {
+  "method": "D-PPO",
+  "seed": 2,
+  "steps": 200000,
+  "trained_through": "BDIx agents (code/bdix/training.py)",
+  "train_seconds": 461.4994354248047,
+  "rollouts": 97,
+  "parameter_sha256": "ad3ba4f84bcf043ae4130160dc10571128db8357a9a10932b482ed99663df0fb",
+  "final_reward_weighted": 0.9333455924114543,
+  "numpy_version": "2.3.5",
+  "compared_checkpoint": "code/campaign/results_fixed4/agents/D-PPO_seed2.pkl",
+  "compared_checkpoint_parameter_sha256": "ad3ba4f84bcf043ae4130160dc10571128db8357a9a10932b482ed99663df0fb",
+  "parameters_identical_to_checkpoint": true,
+  "evaluation": {
+   "eMBB": {
+    "latency": 1.0562902427011323,
+    "sla_viol": 0.0,
+    "throughput": 151.85556000000003,
+    "isolation": 0.968255738660131,
+    "reward": 0.9769101948301531
+   },
+   "uRLLC": {
+    "latency": 1.0092321803387323,
+    "sla_viol": 0.385088841439312,
+    "throughput": 33.76002,
+    "isolation": 0.934686132944678,
+    "reward": 0.955752372505642
+   },
+   "mMTC": {
+    "latency": 4.0,
+    "sla_viol": 0.0,
+    "throughput": 0.0675,
+    "isolation": 0.9995305192693781,
+    "reward": 0.8199146528954037
+   },
+   "msgs_per_s": 528.8325
+  }
+ },
+ {
+  "method": "C-PPO",
+  "seed": 0,
+  "steps": 200000,
+  "trained_through": "BDIx agents (code/bdix/training.py)",
+  "train_seconds": 419.9255292415619,
+  "rollouts": 97,
+  "parameter_sha256": "eeb4e061258f10c027d66d287d1b0ad978c3708198537baa36857545f0029475",
+  "final_reward_weighted": 0.9263711067983231,
+  "numpy_version": "2.3.5",
+  "compared_checkpoint": "code/campaign/results_fixed4/agents/C-PPO_seed0.pkl",
+  "compared_checkpoint_parameter_sha256": "eeb4e061258f10c027d66d287d1b0ad978c3708198537baa36857545f0029475",
+  "parameters_identical_to_checkpoint": true,
+  "evaluation": {
+   "eMBB": {
+    "latency": 2.3443128860260347,
+    "sla_viol": 0.16727906199014836,
+    "throughput": 151.84272,
+    "isolation": 0.9907551188523922,
+    "reward": 0.9678658050638591
+   },
+   "uRLLC": {
+    "latency": 1.0021726304281775,
+    "sla_viol": 0.07877540708505423,
+    "throughput": 33.76008,
+    "isolation": 0.9789378442497387,
+    "reward": 0.9659964588068857
+   },
+   "mMTC": {
+    "latency": 3.991946912736387,
+    "sla_viol": 0.0,
+    "throughput": 0.0675,
+    "isolation": 0.9959291983680572,
+    "reward": 0.819532617181118
+   },
+   "msgs_per_s": 413.55
+  }
+ },
+ {
+  "method": "C-PPO",
+  "seed": 1,
+  "steps": 200000,
+  "trained_through": "BDIx agents (code/bdix/training.py)",
+  "train_seconds": 362.55422854423523,
+  "rollouts": 97,
+  "parameter_sha256": "dbe313e57ea0406011f1e464f552d4a73f27155e7eba9e51e0dfa31a666db0ed",
+  "final_reward_weighted": 0.9278708980652939,
+  "numpy_version": "2.3.5",
+  "compared_checkpoint": "code/campaign/results_fixed4/agents/C-PPO_seed1.pkl",
+  "compared_checkpoint_parameter_sha256": "dbe313e57ea0406011f1e464f552d4a73f27155e7eba9e51e0dfa31a666db0ed",
+  "parameters_identical_to_checkpoint": true,
+  "evaluation": {
+   "eMBB": {
+    "latency": 2.5215306027269775,
+    "sla_viol": 0.030557696508755956,
+    "throughput": 151.8396,
+    "isolation": 0.9937956580087395,
+    "reward": 0.9680619653282267
+   },
+   "uRLLC": {
+    "latency": 1.0019174884423119,
+    "sla_viol": 0.01490820986970906,
+    "throughput": 33.76008,
+    "isolation": 0.9924594251421294,
+    "reward": 0.970048194063234
+   },
+   "mMTC": {
+    "latency": 2.756072567783094,
+    "sla_viol": 0.0,
+    "throughput": 0.0675,
+    "isolation": 0.7930409364683328,
+    "reward": 0.7905461334874758
+   },
+   "msgs_per_s": 428.6125
+  }
+ },
+ {
+  "method": "C-PPO",
+  "seed": 2,
+  "steps": 200000,
+  "trained_through": "BDIx agents (code/bdix/training.py)",
+  "train_seconds": 418.25577569007874,
+  "rollouts": 97,
+  "parameter_sha256": "cfa38623a7439715022a7b63210ea2510041da83d80717af52025996af9307ea",
+  "final_reward_weighted": 0.9261258191075561,
+  "numpy_version": "2.3.5",
+  "compared_checkpoint": "code/campaign/results_fixed4/agents/C-PPO_seed2.pkl",
+  "compared_checkpoint_parameter_sha256": "cfa38623a7439715022a7b63210ea2510041da83d80717af52025996af9307ea",
+  "parameters_identical_to_checkpoint": true,
+  "evaluation": {
+   "eMBB": {
+    "latency": 1.2454335196825448,
+    "sla_viol": 0.0,
+    "throughput": 151.851,
+    "isolation": 0.9719193885816935,
+    "reward": 0.9742734150357852
+   },
+   "uRLLC": {
+    "latency": 1.0075212704810212,
+    "sla_viol": 0.276308221281977,
+    "throughput": 33.76008,
+    "isolation": 0.9369368081272201,
+    "reward": 0.9511436666289237
+   },
+   "mMTC": {
+    "latency": 3.952988437001595,
+    "sla_viol": 0.0,
+    "throughput": 0.0675,
+    "isolation": 0.9038520739375357,
+    "reward": 0.8101260727147188
+   },
+   "msgs_per_s": 450.9125
+  }
+ }
+]

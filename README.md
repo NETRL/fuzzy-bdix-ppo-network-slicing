@@ -29,6 +29,7 @@ The first command verifies the file hashes, the trace workbook, the structure of
 | `code/environment/` | Python replay environment and C++ packet server for the proposed controller and its variants. |
 | `code/components/` | Sugeno plan rules, membership functions, reward weights and component checks. |
 | `code/campaign/` | NumPy learning algorithms, training and evaluation driver, priority and reward-weight sweeps and fluid capacity calculation. |
+| `code/bdix/` | Explicit BDIx agents of the proposed controller: beliefs, desires, intention, plan library, one agent per slice with its PPO policy, the centralized variant, the message log and the control loop. `code/validation/bdix/` holds the episode records obtained through the agents and `tests/` their invariant tests. |
 | `code/campaign/results_fixed4/` | Core checkpoints, original per-episode results, seed summaries, training curves, control settings and interval logs. |
 | `code/campaign/results_adapted4/` | Inputs for the manuscript figures and reports. The `extras/` directory contains the sensitivity, computational scaling and fluid-capacity results. |
 | `comparators/` | Campaign and simulation version for the deep Q-network (DQN), multi-agent PPO (MAPPO) and single-agent PPO-Lagrangian results in Table IX. The workbook in this tree matches the one in `code/data/`. |
@@ -92,6 +93,24 @@ Each log contains 120,000 slice/interval rows across 20 windows. Each replay com
 | Fixed allocation, threshold control, demand-proportional allocation and random policy | Use `code/campaign/results_adapted4/logs/` for the gated seed-0 interval logs and the comparator episode records for Table X. The same-named core logs in `code/campaign/results_fixed4/logs/` contain a separate ungated evaluation. The gated and ungated threshold controller produced 27.56% and 22.03% uRLLC misses, respectively. |
 
 DQN seed 0 has two valid stochastic evaluations. With exploration probability 0.05, the first pass gave 9.51% uRLLC deadline misses. Its original interval file was used for plotting. The second pass started from the saved random generator state and gave 10.11% with the same weights and windows. Table IX uses the second pass. Its detailed reconstruction is `reconstructed/table_IX/DQN_seed0.csv.gz`.
+
+## Run the controller through the BDIx agents
+
+`code/bdix/` expresses the proposed controller as one BDIx agent per slice. In every control interval an agent receives the KPI report of its own slice, revises its ten beliefs, takes the service targets of the request as its desires, infers the plan of the request as its intention and gates the action of its PPO policy with that plan. The environment, the fuzzy rules and the learner are the files described above and are unchanged. `code/bdix/README.md` lists where each part of the manuscript is in the code. Activate the replay environment above and run the following commands.
+
+```sh
+for method in D-PPO C-PPO D-PPO-crisp D-PPO-nogate D-PPO-noiso D-PPO-euclid; do
+  for seed in 0 1 2; do
+    python tools/replay_bdix.py --code code --out regenerated/bdix --method "$method" --seed "$seed"
+  done
+done
+python tools/reproduce_tables_bdix.py --records regenerated/bdix --out regenerated/bdix_tables
+python tests/test_bdix_invariants.py
+```
+
+Each replay runs an archived checkpoint through the agents and compares its 420 per-episode values and its 120,000 interval rows with the archived ones. In each of the 40,000 control intervals it also compares the state vectors, the plans and the grant requests of the agents with those of the environment. It stops if a difference exceeds 1e-9. The table script checks 120 printed cells of Tables VIII, XI and XII and of the proposed controller in Table IX. Without `--records` it reads the records of these replays from `code/validation/bdix/` and uses only the standard library. The agents exchange no message with one another: every counted message is a KPI report, a grant command or an arbitration event with the gNB at one end, and their sum gives the control-message rate of Table VIII.
+
+To train through the agents, run `python tools/train_bdix.py --code code --out regenerated/bdix_training --method D-PPO --seed 0 --compare-driver`. With `--compare-driver` the same seed is also trained with the campaign driver and the parameters are compared bit for bit.
 
 ## Train policies
 
